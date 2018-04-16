@@ -1,5 +1,8 @@
-# Learn
+---
+sidebar: false
+---
+# Learn Index
+## Index Group
 
-test
-
-## Lorem
+- [GraphQL](../graphql/)
+- [Site Inspiration](../site-inspiration/)
