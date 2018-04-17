@@ -21,11 +21,11 @@ module.exports = {
           children: ["","graphql_tut","graphql_nodejs"]
         }
       ],
-      '/site-inspiration/': [
+      '/sitepin/': [
         {
-          title: "Site Inspiration",
+          title: "Site Pin",
           collapsable: false,
-          children: ["","sitedev"]
+          children: ["","pin","sitedev","devlog"]
         }
       ],
      

@@ -876,7 +876,7 @@ Hard to implement perfectly.
 If complexity is estimated by developers, how do we keep it up to date? How do we find the costs in the first place?
 Mutations are hard to estimate. What if they have a side effect that is hard to measure like queuing a background job?
 
-## Throttling
+### Throttling
 
 The solutions we’ve seen so far are great to stop abusive queries from taking your servers down. The problem with using them alone like this is that they will stop large queries, but won’t stop clients that are making a lot of medium sized queries!
 

@@ -4,7 +4,9 @@
   "description": "---\r home: true\r actionText: Get Started to Learn →\r actionLink: /learn/\r footer: Copyright © 2018 | Collection by Artdvp | Powered by VuePress\r ---\r ```js\r let learn = [];",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "author": "",
   "license": "ISC",
