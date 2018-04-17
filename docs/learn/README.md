@@ -5,4 +5,4 @@ sidebar: false
 ## Index Group
 
 - [GraphQL](../graphql/)
-- [Site Inspiration](../site-inspiration/)
+- [Site Pin](../sitepin/)

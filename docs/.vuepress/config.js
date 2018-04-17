@@ -14,20 +14,21 @@ module.exports = {
           children: [""]
         }
       ],
-      '/site-inspiration/': [
-        {
-          title: "Site Inspiration",
-          collapsable: false,
-          children: ["","sitedev"]
-        }
-      ],
       '/graphql/': [
         {
           title: "GraphQL",
           collapsable: false,
-          children: ["","graphql-tut"]
+          children: ["","graphql_tut","graphql_nodejs"]
         }
       ],
+      '/sitepin/': [
+        {
+          title: "Site Pin",
+          collapsable: false,
+          children: ["","pin","sitedev","devlog"]
+        }
+      ],
+     
     }
   },
   serviceWorker: false
