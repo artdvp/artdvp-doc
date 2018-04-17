@@ -14,6 +14,13 @@ module.exports = {
           children: [""]
         }
       ],
+      '/graphql/': [
+        {
+          title: "GraphQL",
+          collapsable: false,
+          children: ["","graphql_tut","graphql_nodejs"]
+        }
+      ],
       '/site-inspiration/': [
         {
           title: "Site Inspiration",
@@ -21,13 +28,7 @@ module.exports = {
           children: ["","sitedev"]
         }
       ],
-      '/graphql/': [
-        {
-          title: "GraphQL",
-          collapsable: false,
-          children: ["","graphql-tut"]
-        }
-      ],
+     
     }
   },
   serviceWorker: false
