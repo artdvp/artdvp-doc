@@ -4,7 +4,7 @@
 
 > Note: The final project for this tutorial can be found on [GitHub](https://github.com/howtographql/graphql-js). You can always use it as a reference whenever you get lost throughout the course of the following chapters. Also note that each code block is annotated with a filename. These annotations directly link to the corresponding file on GitHub so you can clearly see where to put the code and what the end result will look like.
 
-#### Overview
+># Overview
 
 GraphQL is the rising star of backend technologies. It replaces REST as an API design paradigm and is becoming the new standard for exposing the data and functionality of a server.
 
@@ -20,7 +20,7 @@ In this tutorial, you’ll learn how to build an idiomatic GraphQL server entire
   * … provides an editor where you can write queries, mutations & subscriptions, with auto-completion(!) and syntax highlighting.
   * … lets you easily share your API operations.
 
-#### What to expect
+># What to expect
 
 The goal of this tutorial is to build an API for a [Hacker News](https://news.ycombinator.com/) clone. Here is a quick rundown of what to expect in this tutorial.
 
@@ -47,7 +47,7 @@ A : A GraphQL IDE to work with a GraphQL API
 
 In this section, you will setup the project for your GraphQL server and implement your first GraphQL query. In the end, we’ll talk theory for a bit and learn about the [GraphQL schema](https://blog.graph.cool/graphql-server-basics-the-schema-ac5e2950214e).
 
-#### Creating the project
+># Creating the project
 
 This tutorial teaches you how to build a GraphQL server from scratch, so the first thing you need to do is create the directory that’ll hold the files for your GraphQL server!
 
@@ -138,7 +138,7 @@ All right, let’s understand what’s going on here by walking through the numb
 
 Go ahead and test your GraphQL server!
 
-#### Testing the GraphQL server
+># Testing the GraphQL server
 
 > In the root directory of your project, run the following command:
 
@@ -196,7 +196,7 @@ What happens here is that the underlying [graphql-js](https://github.com/graphql
 
 This is in fact one of the core benefits of GraphQL in general: It enforces that the API actually behaves in the way that is promised by the schema definition! This way, everyone who has access to the GraphQL schema can always be 100% sure about the API operations and data structures that are returned by the API.
 
-#### A word on the GraphQL schema
+># A word on the GraphQL schema
 
 At the core of every GraphQL API, there is a GraphQL schema. So, let’s quickly talk about it.
 
@@ -291,7 +291,7 @@ A : Root fields define the available API operations
 
 In this section, you are going to implement the first API operation that provides the functionality for a Hacker News clone: Querying a feed of links that were posted by other users.
 
-#### Extending the schema definition
+># Extending the schema definition
 
 Let’s start by implementing a `feed` query which allows to retrieve a list of `Link` elements. In general, when adding a new feature to the API, the process will look pretty similar every time:
 
@@ -322,7 +322,7 @@ type Link {
 
 Pretty straightforward. You’re defining a new `Link` type that represents the links that can be posted to Hacker News. Each `Link` has an `id`, a `description` and `url`. You’re then adding another root field to the Query type that allows to retrieve a list of `Link` elements. This list is guaranteed to never be null (if anything, it will be empty) and never contain any elements that are `null` - that’s what the two exclamation marks are for.
 
-#### Implement resolver functions
+># Implement resolver functions
 
 The next step is to implement the resolver function for the `feed` query. In fact, one thing we haven’t mentioned yet is that not only root fields, but virtually all fields on the types in a GraphQL schema have resolver functions. So, you’ll add resolvers for the `id`, `description` and `url` fields of the `Link` type as well.
 
@@ -395,7 +395,7 @@ Awesome, the server responds with the data you defined in `links`:
 
 Feel free to play around with the query by removing any fields from the selection set and observe the responses sent by the server.
 
-#### The query resolution process
+># The query resolution process
 
 Let’s now quickly talk about how a GraphQL server actually resolves incoming queries. As you already saw, a GraphQL query consists of a number of fields that have their source in the type definitions of the GraphQL schema.
 
@@ -448,7 +448,7 @@ A : By invoking the resolver functions for the fields contained in the query
 
 In this section, you’ll learn how to add a mutation to the GraphQL API. This mutation will allow to post new links to the server.
 
-#### Extending the schema definition
+># Extending the schema definition
 
 Like before, you need to start by adding the new operation to your GraphQL schema definition.
 
@@ -521,7 +521,7 @@ const server = new GraphQLServer({
 
 One convenient thing about the constructor of the `GraphQLServer` is that `typeDefs` can be provided either directly as a string (as you previously did) or by referencing a file that contains your schema definition (this is what you’re doing now).
 
-#### Implementing the resolver function
+># Implementing the resolver function
 
 The next step in the process of adding a new feature to the API is to implement the resolver function for the new field.
 
@@ -570,7 +570,7 @@ Now it’s a good time to discuss the second argument that’s passed into all r
 
 Correct! It carries the arguments for the operation - in this case the `url` and `description` of the `Link` to be created. We didn’t need it for the `feed` and `info` resolvers before, because the corresponding root fields don’t specify any arguments in the schema definition.
 
-#### Testing the mutation
+># Testing the mutation
 
 Go ahead an restart your server so you can test the new API operations. Here is a sample mutation you can send through the Playground:
 
@@ -605,7 +605,7 @@ To verify that your mutation worked, you can send the `feed` query from before a
 
 However, once you kill and restart the server, you’ll notice that the previously added links are now gone and you need to add them again. This is because the links are only stored in-memory, in the `links` array. In the next sections, you will learn how to add a database layer to the GraphQL server in order to persists the data beyond the runtime of the server.
 
-#### Exercise
+># Exercise
 
 If you want to practice implementing GraphQL resolvers a bit more, here’s a fun little challenge for you. Based on your current implementation, extend the GraphQL API with full CRUD funcionality for the `Link` type. In particular, implement the queries and mutations that have the following definitions:
 
@@ -635,7 +635,7 @@ A : It carries the arguments for the incoming GraphQL operation
 
 In this section, you’re going to setup a Prisma service along with a connected database to be used by the server.
 
-#### Why Prisma
+># Why Prisma
 
 By now, you already understand the basic mechanics of how GraphQL servers work under the hood - surprisingly simple right? That’s part of the beauty of GraphQL, that it actually only follows a few very simple rules. The strongly typed schema and the GraphQL engine that’s resolving the queries inside the server are taking away major pain points commonly dealt with in API development.
 
@@ -661,7 +661,7 @@ Prisma solves this problem by providing you with a GraphQL query engine which is
 > * [GraphQL Schema Stitching explained: Schema Delegation](https://blog.graph.cool/graphql-schema-stitching-explained-schema-delegation-4c6caf468405)
 > * [Reusing & Composing GraphQL APIs with GraphQL Bindings](https://blog.graph.cool/reusing-composing-graphql-apis-with-graphql-bindings-80a4aa37cff5)
 
-#### Architecture
+># Architecture
 
 Here’s an overview of the architecture that’s used when building GraphQL servers with Prisma:
 
@@ -669,11 +669,11 @@ Here’s an overview of the architecture that’s used when building GraphQL ser
 
 What’s important to understand about this architecture that you’re dealing with two(!) GraphQL API layers.
 
-##### The application layer
+>## The application layer
 
 The first GraphQL API is the one that you already started building in the previous sections of this tutorial. This is the GraphQL API for the **application layer**. It defines the API your client applications are going to talk to. Here is where you implement business logic, common workflows like authentication and authorization or integrate with 3rd-party services (such as Stripe if you want to need to implement a payment process). The API of the application layer is defined by the GraphQL schema in `src/schema.graphql` - we’ll therefore from now on refer to this schema as the **application schema**.
 
-##### The database layer
+>## The database layer
 
 The second GraphQL API is the one that’s provided by Prisma and provides the **database layer**. This one basically is a GraphQL-based interface to your database that saves you from the intricacies of writing SQL yourself. So, what does that GraphQL API look like?
 
@@ -717,7 +717,7 @@ type Subscription {
 
 In fact, the actual schema is quite a bit bigger - for brevity we’ve only included the three root types and the simple CRUD operations here. But the API also allows for a variety of other operations (such as batched updates and deletes). If you’re curious, you can check out the entire schema [here](https://gist.github.com/gc-codesnippets/3f4178ad93c51d03195c92ce119d444c).
 
-##### Why not just use the Prisma GraphQL API directly?
+>## Why not just use the Prisma GraphQL API directly?
 
 Prisma really only is an interface to a database. If you consumed the Prisma API directly from your frontend or mobile applications, this would be similar as directly accessing a database.
 
@@ -727,7 +727,7 @@ Another potential concern of directly exposing the Prisma API to your client app
 
 > **Note**: It is currently debated whether it should be possible to limit introspection capabilities, but so far it doesn’t seem a priority in the development of the GraphQL spec. See [this](https://github.com/graphql/graphql-js/issues/113) GitHub issue for more info.
 
-#### Creating a Prisma service with a connected database
+># Creating a Prisma service with a connected database
 
 In this tutorial, you’re going to build everything entirely from scratch! For the Prisma database service, you’re going to start with the most miminal setup that’s possible.
 
@@ -830,7 +830,7 @@ Here’s how the URL is composed:
 
 Notice that the CLI now also added a `cluster` property to `prisma.yml`. In future deploys (e.g. after you made changes to the data model), you therefore won’t be prompted where to deploy the service any more - the CLI will read the cluster from prisma.yml. If you remove this property, the CLI will prompt you again.
 
-#### Exploring the Prisma service
+># Exploring the Prisma service
 
 To explore the Prisma database API, open the URL that was printed by the CLI.
 
@@ -922,7 +922,7 @@ A : The Prisma API only is an interface to the database, but doesn't allow for a
 
 In this section, you’re going to connect your GraphQL server with the [Prisma](https://www.prisma.io/) database service which provides the interface to your database. The connection is implemented via [Prisma bindings](https://github.com/graphcool/prisma-binding).
 
-#### Updating the resolver functions to use Prisma bindings
+># Updating the resolver functions to use Prisma bindings
 
 You’re going to start this section with a bit of cleanup and refactoring.
 
@@ -957,7 +957,7 @@ const resolvers = {
 
 Wow, that looks weird! There’s a bunch of new stuff happening, let’s try to understand what’s going on, starting with the `feed` resolver.
 
-#### The `context` and `info` arguments
+># The `context` and `info` arguments
 
 Previously, the `feed` resolver didn’t take any arguments - now it receives four. In fact, the first two are not needed. But `context` and `info` are.
 
@@ -974,7 +974,7 @@ The `info` object carries information about the incoming GraphQL query (in the f
 
 Now that you have a basic understanding of the arguments that are passed into the resolver, let’s see how they’re being used inside the implementation of the resolver function.
 
-#### Understanding the `feed` resolver
+># Understanding the `feed` resolver
 
 The `feed` resolver is implemented as follows:
 
@@ -1019,7 +1019,7 @@ This would correspond to the following GraphQL query being sent to the Prisma AP
 }
 ```
 
-#### Understanding the `post` resolver
+># Understanding the `post` resolver
 
 The `post` resolver now looks like this:
 
@@ -1075,7 +1075,7 @@ So, to summarize, Prisma bindings let you invoke functions that correspond to op
 
 But, how do you make sure your resolvers actually get access to that magical and often-mentioned `Prisma` binding instance?
 
-#### Creating the `Prisma` binding instance
+># Creating the `Prisma` binding instance
 
 Before doing anything else, go ahead and do what JavaScript developers love most: Add a new dependency to your project 😑
 
@@ -1127,7 +1127,7 @@ const { Prisma } = require("prisma-binding");
 
 You’re almost done! There’s is only one piece left to the puzzle, and that’s downloading the Prisma database schema which referenced in the Prisma constructor call.
 
-#### Downloading the Prisma database schema
+># Downloading the Prisma database schema
 
 There are various ways how to get access to the schema of a GraphQL API. In this tutorial. you’ll use the [GraphQL CLI](https://github.com/graphql-cli/graphql-cli) in combination with [graphql-config](https://github.com/graphcool/graphql-config). This also leads with a few more improvements regarding your general workflows.
 
@@ -1210,7 +1210,7 @@ Note that in this case, it wouldn’t actually make a difference if you left the
 
 Great, that’s it! You can finally start the server now and test the API now!
 
-#### Accessing both GraphQL APIs inside the same Playground
+># Accessing both GraphQL APIs inside the same Playground
 
 Let’s now look at how you can leverage the information in `.graphqlconfig.yml` to work with both GraphQL APIs side-by-side.
 
@@ -1259,7 +1259,7 @@ A : Translate the GraphQL operations from the Prisma API into JavaScript functio
 
 In this section, you’re going to implement signup and login functionality that allows your users to authenticate against your GraphQL server.
 
-#### Adding a `User` type to your data model
+># Adding a `User` type to your data model
 
 The first thing you need is a way to represent user data in the database. You can achieve that by adding a `User` type to the data model.
 
@@ -1300,7 +1300,7 @@ $ prisma deploy
 
 The Prisma database schema in `src/generated/prisma.graphql` and along with it the API of the Prisma service have been updated. The API now also exposes CRUD operations for the `User` type as well operations to connect and disconnect `User` and `Link` elements according to the specified relation.
 
-#### Extending the application schema
+># Extending the application schema
 Remember the process of schema-driven development? It all starts with extending your schema definition with the new operations that you want to add to the API - in this case a `signup` and login `mutation`.
 
 > Open the application schema in `src/schema.graphql` and update the `Mutation` type as follows:
@@ -1341,7 +1341,7 @@ But wait a minute Why are you redefining the `User` type this time. Isn’t this
 
 However, in this case you’re using it to hide certain information of the `User` type in the application schema. Namely, the `password` field (though you’re going to store a hashed version of the password as you’ll see soon - so even if it was exposed here clients wouldn’t be able to directly query it).
 
-#### Implementing the resolver functions
+># Implementing the resolver functions
 
 After extending the schema definition with the new operations, you need to implement the resolver functions for them. Before doing so, let’s actually refactor your code a bit to keep it a bit more modular!
 
@@ -1443,7 +1443,7 @@ Now on the `login` mutation:
  
 The implementation of both resolvers is relatively straighforward - nothing too surpring. The only thing that’s not clear right now is the hardcoded selection set containing only the id field. What happens if the incoming mutation requests more information about the User?
 
-#### Adding the `AuthPayload` resolver
+># Adding the `AuthPayload` resolver
 
 For example, consider this mutation that should be possible according to the GraphQL schema definition:
 
@@ -1547,7 +1547,7 @@ const jwt = require('jsonwebtoken')
 const { APP_SECRET, getUserId } = require('../utils')
 ```
 
-#### Requiring authentication for the `post` mutation
+># Requiring authentication for the `post` mutation
 
 Before you’re going to test your authentication flow, make sure to complete your schema/resolver setup. Right now the `post` resolver is still missing.
 
@@ -1602,7 +1602,7 @@ const resolvers = {
 
 That’s it, you’re ready to test the authentication flow! 🔓
 
-#### Testing the authentication flow
+># Testing the authentication flow
 
 The very first thing you’ll do is test the `signup` mutation and thereby create a new `User` in the database.
 
@@ -1688,13 +1688,13 @@ In this section, you’ll learn how you can bring realtime functionality into yo
 - Send realtime updates to subscribed clients when a new `Link` element is created
 - Send realtime updates to subscribed clients when an existing `Link` element is upvoted
 
-#### What are GraphQL subscriptions?
+># What are GraphQL subscriptions?
 
 Subscriptions are a GraphQL feature that allows a server to send data to its clients when a specific event happens. Subscriptions are usually implemented with [WebSockets](https://en.wikipedia.org/wiki/WebSocket). In that setup, the server maintains a steady connection to its subscribed client. This also breaks the “Request-Response-Cycle” that were used for all previous interactions with the API.
 
 Instead, the client initially opens up a long-lived connection to the server by sending a subscription query that specifies which event it is interested in. Every time this particular event happens, the server uses the connection to push the event data to the subscribed client(s).
 
-#### Subscriptions with Prisma
+># Subscriptions with Prisma
 
 Luckily, Prisma comes with out-of-the-box support for subscriptions. In fact, if you take a look at the Prisma schema in `src/generated/prisma.graphql`, you’ll notice that the `Subscription` type is already there and currently looks as follows:
 
@@ -1746,7 +1746,7 @@ Let’s also quickly consider the `LinkSubscriptionPayload` type from `src/gener
 
 Here’s what the individual fields are being used for:
 
-#### `mutation: MutationType!`
+># `mutation: MutationType!`
 
 `MutationType` is an `enum` with three values:
 
@@ -1760,7 +1760,7 @@ Here’s what the individual fields are being used for:
 
 The `mutation` field on the `LinkSubscriptionPayload` type therefore carries the information what kind of mutation happened.
 
-#### `node: Link`
+># `node: Link`
 
 This field represents the `Link` element which was created, updated or deleted and allows to retrieve more information about it.
 
@@ -1768,7 +1768,7 @@ Notice that for `DELETED`-mutations, `node` will always be `null`! If you need t
 
 > **Note**: The terminology of a node is sometimes used in GraphQL to refer to single elements. A node essentially corresponds to a record in the database.
 
-#### `updatedFields: [String!]`
+># `updatedFields: [String!]`
 
 One piece of information you might be interested in for `UPDATED`-mutations is which fields have been updated inside a mutation. That’s what this field is used for.
 
@@ -1811,7 +1811,7 @@ The subscribed client will then receive the following payload:
 
 This is because the mutation only updated the `Link`’s `description` field - not the url.
 
-#### `previousValues: LinkPreviousValues`
+># `previousValues: LinkPreviousValues`
 
 The `LinkPreviousValues` type looks very similar to Link itself:
 
@@ -1827,7 +1827,7 @@ It basically is a helper type that mirrors the fields from `Link`.
 
 `previousValues` is only used for `UPDATED`- and `DELETED`-mutations. For `CREATED`-mutations, it will always be `null` (for the same reason that node is null for `DELETED`-mutations).
 
-#### Putting everything together
+># Putting everything together
 
 Consider the sample `updateLink`-mutation from the previous section again. But let’s now assume, the subscription query includes all the fields we just discussed:
 
@@ -1875,7 +1875,7 @@ Note that this assumes the updated Link had the following values before the muta
 - `description: A great website`
 
 
-#### Subscribing to new `Link` elements
+># Subscribing to new `Link` elements
 
 Enough with the talking, more of the coding! Let’s implement the subscription that allows your clients to subscribe to newly created `Link` elements.
 
@@ -1958,7 +1958,7 @@ const resolvers = {
 }
 ```
 
-#### Testing subscriptions
+># Testing subscriptions
 
 With all the code in place, it’s time to test your realtime API ⚡️ You can do so, by using two instances (i.e. windows) of the GraphQL Playground at once.
 
@@ -2009,7 +2009,7 @@ Now observe the Playground where the subscription was running:
 
 ![img](https://imgur.com/V89gYLE.png)
 
-#### Adding a voting feature
+># Adding a voting feature
 
 The next feature to be added is a voting feature which lets users upvote certain links. The very first step here is to extend your Prisma data model to represent votes.
 
@@ -2227,7 +2227,7 @@ If you’re unsure about writing one yourself, here’s a sample `vote` mutation
 
 This is the last section of the tutorial where you’ll implement the finishing touches on your API. The goal is to allow clients to constrain the list of `Link` elements returned by the `feed` query by providing filtering and pagination parameters.
 
-#### Filtering
+># Filtering
 
 Thanks to Prisma, you’ll be able to implement filtering capabilities to your API without major effort. Similar to the previous chapters, the heavy-lifting of query resolution will be performed by the powerful Prisma engine. All you need to do is delegate incoming queries to it.
 
@@ -2300,7 +2300,7 @@ That’s it already for the filtering functionality! Go ahead and test your filt
 ```
 ![img](https://imgur.com/1EQsPKc.png)
 
-### Pagination
+> Pagination
 
 Pagination is a tricky topic in API design. On a high-level, there are two major approaches how it can be tackled:
 
@@ -2372,7 +2372,7 @@ You can test the pagination API with the following query which returns the secon
 
 ![img](https://imgur.com/fhkKct7.png)
 
-### Sorting
+> Sorting
 
 With Prisma, it is possible to return lists of elements that are sorted (ordered) according to specific criteria. For example, you can order the list of `Links` alphabetically by their `url` or `description`. For the Hackernews API, you’ll leave it up to the client to decide how exactly it should be sorted and thus include all the ordering options from the Prisma API in the API of your Yoga server. You can do so by directly referencing the LinkOrderByInput enum from the Prisma database schema. Here is what it looks like:
 
@@ -2450,7 +2450,7 @@ Awesome! Here’s a query that sorts the returned links by their creation dates:
 }
 ```
 
-### Returning the total amount of `Link` elements
+> Returning the total amount of `Link` elements
 
 The last thing you’re going to implement for your Hackernews API is the information how many `Link` elements are currently stored in the database. To do so, you’re going to refactor the `feed` query a bit and create a new type to be returned by your API: `Feed`.
 
