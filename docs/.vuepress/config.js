@@ -34,8 +34,14 @@ module.exports = {
           collapsable: false,
           children: ["","javascript_pin"]
         }
+      ],
+      '/git/': [
+        {
+          title: "Git",
+          collapsable: false,
+          children: ["","git-begin"]
+        }
       ]
-     
     }
   },
   serviceWorker: false
