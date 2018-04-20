@@ -28,6 +28,13 @@ module.exports = {
           children: ["","pin","sitedev","devlog"]
         }
       ],
+      '/javascript/': [
+        {
+          title: "JavaScript",
+          collapsable: false,
+          children: ["","javascript_pin"]
+        }
+      ]
      
     }
   },
