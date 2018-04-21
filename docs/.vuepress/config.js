@@ -25,7 +25,7 @@ module.exports = {
         {
           title: "Site Pin",
           collapsable: false,
-          children: ["","pin","sitedev","devlog"]
+          children: ["","pin","sitedev"]
         }
       ],
       '/javascript/': [
@@ -34,8 +34,21 @@ module.exports = {
           collapsable: false,
           children: ["","javascript_pin"]
         }
+      ],
+      '/git/': [
+        {
+          title: "Git",
+          collapsable: false,
+          children: ["","git-begin"]
+        }
+      ],
+      '/freecodecamp/': [
+        {
+          title: "Free Code Camp",
+          collapsable: false,
+          children: ["","frontend-htmlcss"]
+        }
       ]
-     
     }
   },
   serviceWorker: false

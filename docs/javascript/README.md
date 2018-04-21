@@ -1,6 +1,6 @@
-# JavaScript Link
+# About
 
 ## Learn JavaScript
 
-Collection Learning JavaScript
+This is Collection Learning JavaScript
 
