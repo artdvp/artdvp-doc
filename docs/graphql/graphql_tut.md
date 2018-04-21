@@ -13,13 +13,13 @@
 
 At its core, GraphQL enables declarative data fetching where a client can specify exactly what data it needs from an API. Instead of multiple endpoints that return fixed data structures, a GraphQL server only exposes a single endpoint and responds with precisely the data a client asked for.
 
-### GraphQL - A Query Language for APIs
+> GraphQL - A Query Language for APIs
 
 Most applications today have the need to fetch data from a server where that data is stored in a database. It’s the responsibility of the API to provide an interface to the stored data that fits an application’s needs.
 
 GraphQL is often confused with being a database technology. This is a misconception, GraphQL is a query language for APIs - not databases. In that sense it’s database agnostic and effectively can be used in any context where an API is used.
 
-#### A more efficient Alternative to REST
+># A more efficient Alternative to REST
 
 > 💡 Learn more about the top reasons to use GraphQL in [this](https://blog.graph.cool/b60cfa683511) blog post.
 
@@ -36,15 +36,15 @@ The heterogeneous landscape of frontend frameworks and platforms that run client
 3.  Fast development & expectation for rapid feature development
     Continuous deployment has become a standard for many companies, rapid iterations and frequent product updates are indispensable. With REST APIs, the way data is exposed by the server often needs to be modified to account for specific requirements and design changes on the client-side. This hinders fast development practices and product iterations.
 
-### History, Context & Adoption
+> History, Context & Adoption
 
-#### GraphQL is not only for React Developers
+># GraphQL is not only for React Developers
 
 Facebook started using GraphQL in 2012 in their native mobile apps. Interestingly though, GraphQL has mostly been picked up to be used in the context of web technologies and has gained only little traction in the native mobile space.
 
 The first time Facebook publicly spoke about GraphQL was at React.js Conf 2015 and shortly after announced their [plans to open source](https://reactjs.org/blog/2015/05/01/graphql-introduction.html) it. Because Facebook always used to speak about GraphQL in the context of [React](https://reactjs.org/), it took a while for non-React developers to understand that GraphQL was by no means a technology that was limited to usage with React.
 
-#### A rapidly growing Community
+># A rapidly growing Community
 
 In fact, GraphQL is a technology that can be used everywhere a client communicates with an API. Interestingly, other companies like [Netflix](https://medium.com/netflix-techblog) or [Coursera](https://building.coursera.org/) were working on comparable ideas to make API interactions more efficient. Coursera envisioned a similar technology to let a client specify its data requirements and Netflix even open-sourced their solution called [Falcor](https://github.com/Netflix/falcor). After GraphQL was open-sourced, Coursera completely cancelled their own efforts and hopped on the GraphQL train.
 
@@ -63,7 +63,7 @@ A : GraphQL was invented by Facebook
 
 ## GraphQL is the better REST
 
-### Data Fetching with REST vs GraphQL
+> Data Fetching with REST vs GraphQL
 
 With a REST API, you would typically gather the data by accessing multiple endpoints. In the example, these could be `/users/<id>` endpoint to fetch the initial user data. Secondly, there’s likely to be a `/users/<id>/posts` endpoint that returns all the posts for a user. The third endpoint will then be the `/users/<id>/followers` that returns a list of followers per user.
 
@@ -88,7 +88,7 @@ A : Once the schema is defined, frontend and backend teams can work independentl
 
 In this chapter, you’ll learn about some fundamental language constructs of GraphQL. That includes a first glimpse at the syntax for defining types as well as sending queries and mutations. We also prepared a sandbox environment for you, based on [graphql-up](https://github.com/graphcool/graphql-up), that you can use to experiment with what you learn.
 
-### The Schema Definition Language (SDL)
+> The Schema Definition Language (SDL)
 
 GraphQL has its own type system that’s used to define the schema of an API. The syntax for writing schemas is called Schema Definition Language (SDL).
 
@@ -124,7 +124,7 @@ type Person {
 
 Note that we just created a one-to-many-relationship between `Person` and `Post` since the `posts` field on `Person` is actually an array of posts.
 
-### Fetching Data with Queries
+> Fetching Data with Queries
 
 When working with REST APIs, data is loaded from specific endpoints. Each endpoint has a clearly defined structure of the information that it returns. This means that the data requirements of a client are effectively encoded in the URL that it connects to.
 
@@ -132,7 +132,7 @@ The approach that’s taken in GraphQL is radically different. Instead of having
 
 That means that the client needs to send more information to the server to express its data needs - this information is called a query.
 
-#### Basic Queries
+># Basic Queries
 
 Let’s take a look at an example query that a client could send to a server:
 
@@ -181,7 +181,7 @@ One of the major advantages of GraphQL is that it allows for naturally querying 
 }
 ```
 
-#### Queries with Arguments
+># Queries with Arguments
 
 In GraphQL, each field can have zero or more arguments if that’s specified in the schema. For example, the `allPersons` field could have a `last` parameter to only return up to a specific number of persons. Here’s what a corresponding query would look like:
 
@@ -193,7 +193,7 @@ In GraphQL, each field can have zero or more arguments if that’s specified in 
 }
 ```
 
-### Writing Data with Mutations
+> Writing Data with Mutations
 
 Next to requesting information from a server, the majority of applications also need some way of making changes to the data that’s currently stored in the backend. With GraphQL, these changes are made using so-called mutations. There generally are three kinds of mutations:
 
@@ -245,7 +245,7 @@ mutation {
 }
 ```
 
-### Realtime Updates with Subscriptions
+> Realtime Updates with Subscriptions
 
 Another important requirement for many applications today is to have a realtime connection to the server in order to get immediately informed about important events. For this use case, GraphQL offers the concept of subscriptions.
 
@@ -273,7 +273,7 @@ After a client sent this subscription to a server, a connection is opened betwee
 }
 ```
 
-### Defining a Schema
+> Defining a Schema
 
 Now that you have a basic understanding of what queries, mutations, and subscriptions look like, let’s put it all together and learn how you can write a schema that would allow you to execute the examples you’ve seen so far.
 
@@ -373,7 +373,7 @@ GraphQL has been released only as a specification. This means that GraphQL is in
 
 If you want to use GraphQL yourself, you’ll have to go and build that GraphQL server yourself. You can do that in any programming language of your choice (e.g. based on one of the [available reference implementations](http://graphql.org/code/)) or by using a service like [Graphcool](http://www.graph.cool/) that provides a powerful GraphQL API out-of-the-box.
 
-### Use Cases
+> Use Cases
 
 In this section, we’ll walk you through 3 different kinds of architectures that include a GraphQL server:
 
@@ -382,7 +382,7 @@ In this section, we’ll walk you through 3 different kinds of architectures tha
 3.  A hybrid approach of a connected database and third party or legacy systems that can all be accessed through the same GraphQL API
     All three architectures represent major use cases of GraphQL and demonstrate the flexibility in terms of the context where it can be used.
 
-#### 1. GraphQL server with a connected database
+># 1. GraphQL server with a connected database
 
 This architecture will be the most common for greenfield projects. In the setup, you have a single (web) server that implements the GraphQL specification. When a query arrives at the GraphQL server, the server reads the query’s payload and fetches the required information from the database. This is called resolving the query. It then constructs the response object [as described in the official specification](https://facebook.github.io/graphql/#sec-Response) and returns it to the client.
 
@@ -392,7 +392,7 @@ GraphQL also doesn’t care about the database or the format that is used to sto
 
 <figure><img src='https://imgur.com/kC0cFk7.png'><figcaption>A standard greenfield architecture with one GraphQL server that connects to a single database.</figcaption></figure>
 
-#### 2. GraphQL layer that integrates existing systems
+># 2. GraphQL layer that integrates existing systems
 
 Another major use case for GraphQL is the integration of multiple existing systems behind a single, coherent GraphQL API. This is particularly compelling for companies with legacy infrastructures and many different APIs that have grown over years and now impose a high maintenance burden. One major problem with these legacy systems is that they make it practically impossible to build innovative products that need access to multiple systems.
 
@@ -402,7 +402,7 @@ Just like in the previous architecture where the GraphQL server didn’t care ab
 
 <figure><img src='https://imgur.com/168FvP4.png'><figcaption>GraphQL allows you to hide the complexity of existing systems, such as microservices, legacy infrastructures or third-party APIs behind a single GraphQL interface.</figcaption></figure>
 
-#### 3. Hybrid approach with connected database and integration of existing system
+># 3. Hybrid approach with connected database and integration of existing system
 
 Finally, it’s possible to combine the two approaches and build a GraphQL server that has a connected database but still talks to legacy or third—party systems.
 
@@ -410,7 +410,7 @@ When a query is received by the server, it will resolve it and either retrieve t
 
 <figure><img src='https://imgur.com/oOVYriG.png'><figcaption>Both approaches can also be combined and the GraphQL server can fetch data from a single database as well as from an existing system - allowing for complete flexibility and pushing all data management complexity to the server.</figcaption></figure>
 
-### Resolver Functions
+> Resolver Functions
 
 But how do we gain this flexibility with GraphQL? How is it that it’s such a great fit for these very different kinds of use cases?
 
@@ -420,7 +420,7 @@ When the server receives a query, it will call all the functions for the fields 
 
 <figure><img src='https://imgur.com/cP2i8Da.png'><figcaption>Each field in the query corresponds to a resolver function. The GraphQL calls all required resolvers when a query comes in to fetch the specified data.</figcaption></figure>
 
-### GraphQL Client Libraries
+> GraphQL Client Libraries
 
 GraphQL is particularly great for frontend developers since it completely eliminates many of the inconveniences and shortcomings that are experienced with REST APIs, such as over- and underfetching. Complexity is pushed to the server-side where powerful machines can take care of the heavy computation work. The client doesn’t have to know where the data that it fetches is actually coming from and can use a single, coherent and flexible API.
 
@@ -460,19 +460,19 @@ Of course, nothing stops you from using plain HTTP to fetch your data and then s
 
 > There are two major GraphQL clients available at the moment. The first one is [Apollo Client](https://github.com/apollographql/apollo-client), which is a community-driven effort to build a powerful and flexible GraphQL client for all major development platforms. The second one is called [Relay](https://facebook.github.io/relay/) and it is Facebook’s homegrown GraphQL client that heavily optimizes for performance and is only available on the web.
 
-### Directly Sending Queries and Mutations
+> Directly Sending Queries and Mutations
 
 A major benefit of GraphQL is that it allows you to fetch and update data in a declarative manner. Put differently, we climb up one step higher on the API abstraction ladder and don’t have to deal with low-level networking tasks ourselves anymore.
 
 When you previously used plain HTTP (like `fetch` in Javascript or `NSURLSession` on iOS) to load data from an API, all you need to do with GraphQL is write a query where you declare your data requirements and let the system take care of sending the request and handling the response for you. This is precisely what a GraphQL client will do.
 
-### View Layer Integrations & UI updates
+> View Layer Integrations & UI updates
 
 Once the server response was received and handled by the GraphQL client, the requested data somehow needs to end up in your UI. Depending on the platforms and frameworks you’re developing with, there will be different approaches how UI updates are handled in general.
 
 Taking React as an example, GraphQL clients use the concept of [higher-order components](https://reactjs.org/docs/higher-order-components.html) to fetch the needed data under the hood and make it available in the props of your components. In general, the declarative nature of GraphQL ties in particularly well with [functional reactive programming](https://en.wikipedia.org/wiki/Functional_reactive_programming) techniques. The two can form a powerful combination where a view simply declares its data dependencies and the UI is wired up with an FRP layer of your choice.
 
-### Caching Query Results: Concepts and Strategies
+> Caching Query Results: Concepts and Strategies
 
 In the majority of applications, you’ll want to maintain a cache of the data that was previously fetched from the server. Having information cached locally is essential to provide a fluent user experience and takes the load off your users’ data plans.
 
@@ -480,13 +480,13 @@ Generally, when caching data, the intuition is to put information that’s fetch
 
 A more beneficial approach is to normalize the data beforehand. That means that the (potentially nested) query result gets flattened and the store will only contain individual records that can be referenced with a globally unique ID. If you want to learn more about this, the [Apollo blog](https://dev-blog.apollodata.com/the-concepts-of-graphql-bc68bd819be3) has a great write-up on the topic.
 
-### Build-time Schema Validation & Optimizations
+> Build-time Schema Validation & Optimizations
 
 Since the schema contains all information about what a client can potentially do with a GraphQL API, there is a great opportunity to validate and potentially optimize the queries that a client wants to send already at build-time.
 
 When the build environment has access to the schema, it can essentially parse all the GraphQL code that’s located in the project and compare it against the information from the schema. This catches typos and other errors before an application gets into the hands of actual users where the consequences of an error would be a lot more drastic.
 
-### Colocating Views and Data Dependencies
+> Colocating Views and Data Dependencies
 
 A powerful concept of GraphQL is that it allows you to have UI code and data requirements side-by-side. The tight coupling of views and their data dependencies greatly improves the developer experience. The mental overhead of thinking about how the right data ends up in the right parts of the UI is eliminated.
 
@@ -503,7 +503,7 @@ A : Normalizing the data
 
 GraphQL is often explained as a frontend-focused API technology because it enables clients to get data in a much nicer way than before. But the API itself is, of course, implemented on the server side. There are a lot of benefits to be had on the server as well because GraphQL enables the server developer to focus on describing the data available rather than implementing and optimizing specific endpoints.
 
-### GraphQL execution
+> GraphQL execution
 
 GraphQL doesn’t just specify a way to describe schemas and a query language to retrieve data from those schemas, but an actual execution algorithm for how those queries are transformed into results. This algorithm is quite simple at its core: The query is traversed field by field, executing “resolvers” for each field. So, let’s say we have the following schema:
 
@@ -564,7 +564,7 @@ One thing to note is that most GraphQL server implementations will provide “de
 
 Read more in-depth about GraphQL execution in the "[GraphQL Explained](https://dev-blog.apollodata.com/graphql-explained-5844742f195e)" post on the Apollo blog.
 
-### Batched Resolving
+> Batched Resolving
 
 One thing you might notice about the execution strategy above is that it’s somewhat naive. For example, if you have a resolver that fetches from a backend API or database, that backend might get called many times during the execution of one query. Let’s imagine we wanted to get the authors of several posts, like so:
 
@@ -632,7 +632,7 @@ If you are familiar with GraphQL basics, you probably know how GraphQL’s Type 
 
 An amazing thing with GraphQL is that these capabilities are not only known to the server. GraphQL allows clients to ask a server for information about its schema. GraphQL calls this **introspection**.
 
-### Introspection
+> Introspection
 
 The designers of the schema already know what the schema looks like but how can clients discover what is accessible through a GraphQL API? We can ask GraphQL for this information by querying the `__schema` meta-field, which is always available on the root type of a Query per the spec.
 
@@ -744,7 +744,7 @@ As you can see, introspection is an extremely powerful feature of GraphQL, and w
 
 A lot of tools available in the GraphQL ecosystem use the introspection system to provide amazing features. Think of documentation browsers, autocomplete, code generation, everything is possible! One of the most useful tools you will need as you build and use GraphQL APIs uses introspection heavily. It is called **GraphiQL**.
 
-### GraphiQL
+> GraphiQL
 
 GraphiQL is an in-browser IDE for writing, validating, and testing GraphQL queries. It features an editor for GraphQL queries, equipped with autocompletion and validation as well as a documentation explorer to quickly visualize the structure of a schema (Powered by introspection).
 
@@ -767,23 +767,23 @@ Since clients have the possibility to craft very complex queries, our servers mu
 
 There are a few strategies to mitigate these risks, which we will cover in this chapter. We will cover them in order of most simple to the most complex, and look at their pros and cons.
 
-#### Timeout
+># Timeout
 
 The first strategy and the most simple one is using a simple timeout to defend against large queries. This strategy is the simplest since it does not require the server to know anything about the incoming queries. All the server knows is the maximum of time allowed for a query.
 
 For example, a server configured with a 5 seconds timeout would stop the execution of any query that is taking more than 5 seconds to execute.
 
-#### Timeout Pros
+># Timeout Pros
 
 Simple to implement.
 Most strategies will still use a timeout as a final protection
 
-#### Timeout Cons
+># Timeout Cons
 
 Damage can already be done even when the timeout kicks in.
 Sometimes hard to implement. Cutting connections after a certain time may result in strange behaviours.
 
-### Maximum Query Depth
+> Maximum Query Depth
 
 As we covered earlier, clients using GraphQL may craft any complex query they want. Since GraphQL schemas are often cyclic graphs, this means a client could craft a query like this one:
 
@@ -827,15 +827,15 @@ Using `graphql-ruby` with the max query depth setting, we get the following resu
 }
 ```
 
-#### Maximum Query Depth Pros
+># Maximum Query Depth Pros
 
 Since the AST of the document is analyzed statically, the query does not even execute, which adds no load on your GraphQL server.
 
-#### Maximum Query Depth Cons
+># Maximum Query Depth Cons
 
 Depth alone is often not enough to cover all abusive queries. For example, a query requesting an enormous amount of nodes on the root will be very expensive but unlikely to be blocked by a query depth analyzer.
 
-### Query Complexity
+> Query Complexity
 
 Sometimes, the depth of a query is not enough to truly know how large or expensive a GraphQL query will be. In a lot of cases, certain fields in our schema are known to be more complex to compute than others.
 
@@ -865,18 +865,18 @@ query {
 }
 ```
 
-#### Query Complexity Pros
+># Query Complexity Pros
 
 Covers more cases than a simple query depth.
 Reject queries before executing them by statically analyzing the complexity.
 
-#### Query Complexity Cons
+># Query Complexity Cons
 
 Hard to implement perfectly.
 If complexity is estimated by developers, how do we keep it up to date? How do we find the costs in the first place?
 Mutations are hard to estimate. What if they have a side effect that is hard to measure like queuing a background job?
 
-### Throttling
+> Throttling
 
 The solutions we’ve seen so far are great to stop abusive queries from taking your servers down. The problem with using them alone like this is that they will stop large queries, but won’t stop clients that are making a lot of medium sized queries!
 
@@ -884,7 +884,7 @@ In most APIs, a simple throttle is used to stop clients from requesting resource
 
 In fact, we have no idea what amount of requests is acceptable since they are defined by the clients. So what can we use to throttle clients?
 
-#### Throttling Based on Server Time
+># Throttling Based on Server Time
 
 A good estimate of how expensive a query is the server time it needs to complete. We can use this heuristic to throttle queries. With a good knowledge of your system, you can come up with a maximum server time a client can use over a certain time frame.
 
@@ -914,7 +914,7 @@ It can be good to express these throttling constraints to clients if your GraphQ
 
 Remember the Max Complexity we talked about earlier? What if we throttled based on that instead?
 
-#### Throttling Based on Query Complexity
+># Throttling Based on Query Complexity
 
 Throttling based on Query Complexity is a great way to work with clients and help them respect the limits of your schema.
 
@@ -938,7 +938,7 @@ The principles are the same as our time throttle, but now communicating these li
 
 The GitHub public API actually uses this approach to throttle their clients. Take a look at how they express these limits to users: [https://developer.github.com/v4/guides/resource-limitations/](https://developer.github.com/v4/guides/resource-limitations/).
 
-### Summary
+> Summary
 
 GraphQL is great to use for clients because it gives them so much more power. But that power also gives them the possibility to abuse your GraphQL server with very expensive queries.
 
@@ -956,11 +956,11 @@ A : Timeout
 
 ## Common Questions
 
-### Is GraphQL a Database Technology?
+> Is GraphQL a Database Technology?
 
 No. GraphQL is often confused with being a database technology. This is a misconception, GraphQL is a query language for APIs - not databases. In that sense it’s database agnostic and can be used with any kind of database or even no database at all.
 
-### Is GraphQL only for React / Javascript Developers?
+> Is GraphQL only for React / Javascript Developers?
 
 No. GraphQL is an API technology so it can be used in any context where an API is required.
 
@@ -970,7 +970,7 @@ Since a GraphQL API is usually operated over HTTP, any client that can speak HTT
 
 > Note: GraphQL is actually transport layer agnostic, so you could choose other protocols than HTTP to implement your server.
 
-### How to do Server-side Caching?
+> How to do Server-side Caching?
 
 One common concern with GraphQL, especially when comparing it to REST, are the difficulties to maintain server-side cache. With REST, it’s easy to cache the data for each endpoint, since it’s sure that the structure of the data will not change.
 
@@ -978,7 +978,7 @@ With GraphQL on the other hand, it’s not clear what a client will request next
 
 Server-side caching still is a challenge with GraphQL. More info about caching can be found on the [GraphQL website](http://graphql.org/learn/caching/).
 
-### How to do Authentication and Authorization?
+> How to do Authentication and Authorization?
 
 Authentication and authorization are often confused. Authentication describes the process of claiming an identity. That’s what you do when you log in to a service with a username and password, you authenticate yourself. Authorization on the other hand describes permission rules that specify the access rights of individual users and user groups to certain parts of the system.
 
@@ -986,7 +986,7 @@ Authentication in GraphQL can be implemented with common patterns such as [OAuth
 
 To implement authorization, it is [recommended](http://graphql.org/learn/authorization/) to delegate any data access logic to the business logic layer and not handle it directly in the GraphQL implementation. If you want to have some inspiration on how to implement authorization, you can take a look [Graphcool’s permission queries](https://www.graph.cool/blog/2017-04-25-graphql-permission-queries-oolooch8oh/).
 
-### How to do Error Handling?
+> How to do Error Handling?
 A successful GraphQL query is supposed to return a JSON object with a root field called `"data"`. If the request fails or partially fails (e.g. because the user requesting the data doesn’t have the right access permissions), a second root field called `"errors"` is added to the response:
 
 ```json
@@ -997,7 +997,7 @@ A successful GraphQL query is supposed to return a JSON object with a root field
 ```
 For more details, you can refer to the [GraphQL specification](http://facebook.github.io/graphql/#sec-Errors).
 
-### Does GraphQL Support Offline Usage?
+> Does GraphQL Support Offline Usage?
 GraphQL is a query language for (web) APIs, and in that sense by definition only works online. However, offline support on the client-side is a valid concern. The caching abilities of Relay and Apollo might already be enough for some use cases, but there isn’t a popular solution for actually persisting stored data yet. You can gain some more insights in the GitHub issues of [Relay](https://github.com/facebook/relay/issues/676) and [Apollo](https://github.com/apollographql/apollo-client/issues/424) where offline support is discussed.
 
 > One interesting approach for offline usage and persistence can be found [here](http://www.east5th.co/blog/2017/07/24/offline-graphql-queries-with-redux-offline-and-apollo/).

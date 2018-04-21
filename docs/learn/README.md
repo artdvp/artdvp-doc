@@ -4,6 +4,8 @@ sidebar: false
 # Learn Index
 ## Index Group
 
-- [JavaScript](../javascript/)
+- [FreeCodeCamp](../freecodecamp/)
+- [Git](../git/)
 - [GraphQL](../graphql/)
+- [JavaScript](../javascript/)
 - [Site Pin](../sitepin/)
