@@ -53,7 +53,7 @@ This tutorial teaches you how to build a GraphQL server from scratch, so the fir
 
 > Open your terminal, navigate to a location of your choice and run the following commands:
 
-```sh
+```bash
 $ mkdir hackernews-node
 $ cd hackernews-node
 $ yarn init -y
@@ -481,7 +481,7 @@ At this point, the schema definition already has grown to be quite large. Let’
 
 > ../hackernews-node/src
 
-```sh
+```bash
 $ touch src/schema.graphql
 ```
 
@@ -737,7 +737,7 @@ The first thing you need to do is create two files, which you’re going to put 
 
 > .../hackernews-node/
 
-```sh
+```bash
 $ mkdir database
 $ touch database/prisma.yml
 $ touch database/datamodel.graphql
@@ -857,7 +857,7 @@ Inside the `database` directory, run the following command to generate an authen
 
 > .../hackernews-node/database
 
-```sh
+```bash
 $ prisma token
 ```
 
@@ -1083,7 +1083,7 @@ Before doing anything else, go ahead and do what JavaScript developers love most
 
 > .../hackernews-node
 
-```sh
+```bash
 $ yarn add prisma-binding
 ```
 
@@ -1135,7 +1135,7 @@ There are various ways how to get access to the schema of a GraphQL API. In this
 
 > .../hackernews-node
 
-```sh
+```bash
 $ touch .graphqlconfig.yml
 ```
 
@@ -1178,7 +1178,7 @@ The Prisma CLI also uses information that’s provided in `.graphqlconfig.yml`. 
 
 > .../hackernews-node
 
-```sh
+```bash
 $ prisma deploy
 ```
 
@@ -1226,7 +1226,7 @@ Now you can run the `graphql playground` command to open both APIs at once. Befo
 
 > .../hackernews-node
 
-```sh
+```bash
 $ node src/index.js
 ```
 
@@ -1234,7 +1234,7 @@ $ node src/index.js
 
 > hackernews-node/
 
-```sh
+```bash
 $ graphql playground
 ```
 
@@ -1294,7 +1294,7 @@ After every change you’re making to the data model, you need to redeploy the P
 
 > .../hackernews-node
 
-```sh
+```bash
 $ prisma deploy
 ```
 
@@ -1351,7 +1351,7 @@ You’ll pull out the resolvers for each type into their own files.
 
 > .../hackernews-node
 
-```sh
+```bash
 $ mkdir src/resolvers
 $ touch src/resolvers/Query.js
 $ touch src/resolvers/Mutation.js
@@ -1492,7 +1492,7 @@ Now let’s go and finish up the implementation.
 
 > .../hackernews-node/
 
-```sh
+```bash
 $ yarn add jsonwebtoken bcryptjs
 ```
 
@@ -1502,7 +1502,7 @@ Next, you’ll create a few utilities that are being reused in a few places.
 
 > .../hackernews-node/
 
-```sh
+```bash
 $ touch src/utils.js
 ```
 
@@ -1907,7 +1907,7 @@ To adhere to the modular structure of your resolver implementation, first create
 
 > .../hackernews-node
 
-```sh
+```bash
 $ touch src/resolvers/Subscription.js
 ```
 
@@ -2050,7 +2050,7 @@ To apply the changes and update your Prisma GraphQL API so it includes CRUD oper
 
 > .../hackernews-node
 
-```sh
+```bash
 $ prisma deploy
 ```
 
@@ -2518,7 +2518,7 @@ The last step now is to implement the resolver for the `Feed` type.
 > Create a new file inside `src/resolvers` and call it `Feed.js`:
 
 > .../hackernews-node
-```sh
+```bash
 $ touch src/resolvers/Feed.js
 ```
 
