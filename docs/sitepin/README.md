@@ -1,5 +1,3 @@
-# Sitepin
+# About
 
-Pin Technology Development
-
-- [Pin link](pin.md)
+Pin Collection Technology Development
