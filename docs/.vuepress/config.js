@@ -41,6 +41,13 @@ module.exports = {
           collapsable: false,
           children: ["","git-begin"]
         }
+      ],
+      '/freecodecamp/': [
+        {
+          title: "Free Code Camp",
+          collapsable: false,
+          children: ["","frontend-htmlcss"]
+        }
       ]
     }
   },
