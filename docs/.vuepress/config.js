@@ -32,7 +32,7 @@ module.exports = {
         {
           title: "JavaScript",
           collapsable: false,
-          children: ["","javascript_pin"]
+          children: ["","javascript_pin","modern-js-cheatsheet"]
         }
       ],
       '/git/': [
