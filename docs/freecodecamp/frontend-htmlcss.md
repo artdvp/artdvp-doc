@@ -1998,3 +1998,508 @@ Change the `margin` of the green box to match that of the red box.
   <h5 class="box green-box">padding</h5>
 </div>
 ```
+
+## Add a Negative Margin to an Element
+
+An element's `margin` controls the amount of space between an element's `border` and surrounding elements.
+
+If you set an element's `margin` to a negative value, the element will grow larger.
+
+Try to set the `margin` to a negative value like the one for the red box.
+
+Change the `margin` of the green box to `-15px`, so it fills the entire horizontal width of the yellow box around it.
+
+> Practice
+
+```html
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+  
+  .red-box {
+    background-color: red;
+    padding: 20px;
+    margin: -15px;
+  }
+
+  .green-box {
+    background-color: green;
+    padding: 20px;
+    margin: -15px;
+  }
+</style>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>
+```
+
+## Add Different Padding to Each Side of an Element
+
+Sometimes you will want to customize an element so that it has different `padding` on each of its sides.
+
+CSS allows you to control the `padding` of an element on all four sides with `padding-top`, `padding-right`, `padding-bottom`, and `padding-left` properties.
+
+Give the green box a `padding` of `40px` on its top and left side, but only `20px` on its bottom and right side.
+
+> Practice
+
+```html
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+  
+  .red-box {
+    background-color: red;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+  }
+
+  .green-box {
+    background-color: green;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>
+```
+
+## Add Different Margins to Each Side of an Element
+
+Sometimes you will want to customize an element so that it has a different `margin` on each of its sides.
+
+CSS allows you to control the `margin` of an element on all four sides with `margin-top`, `margin-right`, `margin-bottom`, and `margin-left` properties.
+
+Give the green box a `margin` of `40px` on its top and left side, but only `20px` on its bottom and right side.
+
+> Practice
+
+```html
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+  
+  .red-box {
+    background-color: red;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+
+  .green-box {
+    background-color: green;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>
+```
+
+## Use Clockwise Notation to Specify the Padding of an Element
+
+Instead of specifying an element's `padding-top`, `padding-right`, `padding-bottom`, and `padding-left` properties, you can specify them all in one line, like this:
+
+`padding: 10px 20px 10px 20px;`
+
+These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific padding instructions.
+
+Use Clockwise Notation to give the ".green-box" class a `padding` of `40px` on its top and left side, but only `20px` on its bottom and right side.
+
+> Practice
+
+```html
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 20px 40px 20px 40px;
+  }
+  
+  .red-box {
+    background-color: red;
+    padding: 20px 40px 20px 40px;
+  }
+
+  .green-box {
+    background-color: green;
+    padding: 40px 20px 20px 40px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>
+```
+
+## Use Clockwise Notation to Specify the Margin of an Element
+
+Let's try this again, but with margin this time.
+
+Instead of specifying an element's `margin-top`, `margin-right`, `margin-bottom,` and `margin-left` properties, you can specify them all in one line, like this:
+
+`margin: 10px 20px 10px 20px;`
+
+These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific margin instructions.
+
+Use `Clockwise Notation` to give the element with the `green-box` class a margin of `40px` on its top and left side, but only `20px` on its bottom and right side.
+
+```html
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 20px 40px 20px 40px;
+  }
+  
+  .red-box {
+    background-color: red;
+    margin: 20px 40px 20px 40px;
+  }
+
+  .green-box {
+    background-color: green;
+    margin: 40px 20px 20px 40px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>
+```
+
+## Style the HTML Body Element
+
+Now let's start fresh and talk about CSS inheritance.
+
+Every HTML page has a `body` element.
+
+We can prove that the `body` element exists here by giving it a `background-color` of black.
+
+We can do this by adding the following to our `style` element:
+
+```css
+body {
+  background-color: black;
+}
+```
+
+> Practice
+
+```html
+<style>
+  body {
+    background-color: black;
+  }
+</style>
+```
+
+## Inherit Styles from the Body Element
+
+Now we've proven that every HTML page has a `body` element, and that its `body` element can also be styled with CSS.
+
+Remember, you can style your `body` element just like any other HTML element, and all your other elements will inherit your `body` element's styles.
+
+First, create a `h1` element with the text `Hello World`
+
+Then, let's give all elements on your page the color of `green` by adding `color: green;` to your `body` element's style declaration.
+
+Finally, give your `body` element the `font-family` of `Monospace` by adding `font-family: Monospace;` to your `body` element's style declaration.
+
+> Practice
+
+```html
+
+<style>
+  body {
+    background-color: black;
+    font-family: Monospace;
+    color: green;
+  }
+
+</style>
+
+<h1>Hello World</h1>
+```
+
+## Prioritize One Style Over Another
+
+Sometimes your HTML elements will receive multiple styles that conflict with one another.
+
+For example, your `h1` element can't be both green and pink at the same time.
+
+Let's see what happens when we create a class that makes text pink, then apply it to an element. Will our class `override` the `body` element's `color: green;` CSS property?
+
+Create a CSS class called `pink-text` that gives an element the color pink.
+
+Give your `h1` element the class of `pink-text`.
+
+> Practice
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: Monospace;
+    color: green;
+  }
+  
+  .pink-text {
+    color: pink;
+  }
+</style>
+<h1 class="pink-text">Hello World!</h1>
+```
+
+## Override Styles in Subsequent CSS
+
+Our "pink-text" class overrode our `body` element's CSS declaration!
+
+We just proved that our classes will override the `body` element's CSS. So the next logical question is, what can we do to override our `pink-text` class?
+
+Create an additional CSS class called `blue-text` that gives an element the color blue. Make sure it's below your `pink-text` class declaration.
+
+Apply the `blue-text` class to your h1 element in addition to your `pink-text` class, and let's see which one wins.
+
+Applying multiple class attributes to a HTML element is done with a space between them like this:
+
+`class="class1 class2"`
+
+Note: It doesn't matter which order the classes are listed in the HTML element.
+
+However, the order of the class declarations in the `<style>` section are what is important. The second declaration will always take precedence over the first. Because `.blue-text` is declared second, it overrides the attributes of `.pink-text`
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: Monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
+```
+
+## Override Class Declarations by Styling ID Attributes
+
+We just proved that browsers read CSS from top to bottom. That means that, in the event of a conflict, the browser will use whichever CSS declaration came last.
+
+But we're not done yet. There are other ways that you can override CSS. Do you remember id attributes?
+
+Let's override your `pink-text` and `blue-text` classes, and make your `h1` element orange, by giving the `h1` element an id and then styling that id.
+
+Give your `h1` element the `id` attribute of `orange-text`. Remember, id styles look like this:
+
+`<h1 id="orange-text">`
+
+Leave the `blue-text` and `pink-text` classes on your h1 element.
+
+Create a CSS declaration for your `orange-text` id in your `style` element. Here's an example of what this looks like:
+
+```css
+#brown-text {
+  color: brown;
+}
+```
+Note: It doesn't matter whether you declare this css above or below pink-text class, since id attribute will always take precedence.
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: Monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+  
+  #orange-text {
+    color: orange;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
+```
+
+## Override Class Declarations with Inline Styles
+
+So we've proven that id declarations override class declarations, regardless of where they are declared in your `style` element CSS.
+
+There are other ways that you can override CSS. Do you remember inline styles?
+
+Use an `in-line style` to try to make our `h1` element white. Remember, in line styles look like this:
+
+`<h1 style="color: green">`
+
+Leave the `blue-text` and `pink-text` classes on your `h1` element.
+
+> Practice
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: Monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color:white;">Hello World!</h1>
+```
+
+## Override All Other Styles by using Important
+
+Yay! We just proved that in-line styles will override all the CSS declarations in your `style` element.
+
+But wait. There's one last way to override CSS. This is the most powerful method of all. But before we do it, let's talk about why you would ever want to override CSS.
+
+In many situations, you will use CSS libraries. These may accidentally override your own CSS. So when you absolutely need to be sure that an element has specific CSS, you can use `!important`
+
+Let's go all the way back to our `pink-text` class declaration. Remember that our `pink-text` class was overridden by subsequent class declarations, id declarations, and in-line styles.
+
+Let's add the keyword `!important` to your pink-text element's color declaration to make 100% sure that your `h1` element will be pink.
+
+An example of how to do this is:
+
+`color: red !important;`
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: Monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
+```
+
+## Use Hex Code for Specific Colors
+
+Did you know there are other ways to represent colors in CSS? One of these ways is called hexadecimal code, or `hex code` for short.
+
+We usually use `decimals`, or base 10 numbers, which use the symbols 0 to 9 for each digit. `Hexadecimals` (or `hex`) are base 16 numbers. This means it uses sixteen distinct symbols. Like decimals, the symbols 0-9 represents values zero to nine. Then A,B,C,D,E,F represent values ten to fifteen. Altogether, 0 to F can represent a digit in `hexadecimal`, giving us 16 total possible values. You can find more information about [hexadecimal numbers here](https://en.wikipedia.org/wiki/Hexadecimal).
+
+In CSS, we can use 6 hexadecimal digits to represent colors, two each for the red (R), green (G), and blue (B) components. For example, `#000000` is black and is also the lowest possible value. You can find more information about the [RGB color system here](https://en.wikipedia.org/wiki/RGB_color_model).
+
+Replace the word `black` in our `body` element's background-color with its `hex code` representation, `#000000`.
+
+```html
+<style>
+  body {
+    background-color: #000000;
+  }
+</style>
+```
