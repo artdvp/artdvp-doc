@@ -1,4 +1,4 @@
-# FreeCodeCamp - HTML5 and CSS3
+# HTML5 and CSS3
 
 ## Say Hello to HTML Elements
 
@@ -2502,4 +2502,156 @@ Replace the word `black` in our `body` element's background-color with its `hex 
     background-color: #000000;
   }
 </style>
+```
+
+## Use Hex Code to Mix Colors
+
+To review, hex codes use 6 hexadecimal digits to represent colors, two each for red (R), green (G), and blue (B) components.
+
+From these three pure colors (red, green, and blue), we can vary the amounts of each to create over 16 million other colors!
+
+For example, orange is pure red, mixed with some green, and no blue. In hex code, this translates to being `#FFA500`.
+
+The digit `0` is the lowest number in hex code, and represents a complete absence of color.
+
+The digit F is the highest number in hex code, and represents the maximum possible brightness.
+
+Replace the color words in our style element with their correct hex codes.
+
+| Color Hex   | Code    |
+|:----------- |:--------|
+| Dodger Blue | #2998E4 |
+| Green       | #00FF00 |
+| Orange      | #FFA500 |
+| Red         | #FF0000 |
+
+```html
+<style>
+  .red-text {
+    color: #FF0000;
+  }
+  .green-text {
+    color: #00FF00;
+  }
+  .dodger-blue-text {
+    color: #2998E4;
+  }
+  .orange-text {
+    color: #FFA500;
+  }
+</style>
+
+<h1 class="red-text">I am red!</h1>
+
+<h1 class="green-text">I am green!</h1>
+
+<h1 class="dodger-blue-text">I am dodger blue!</h1>
+
+<h1 class="orange-text">I am orange!</h1>
+```
+
+## Use Abbreviated Hex Code
+
+Many people feel overwhelmed by the possibilities of more than 16 million colors. And it's difficult to remember hex code. Fortunately, you can shorten it.
+
+For example, red's hex code `#FF0000` can be shortened to `#F00`. This shortened form gives one digit for red, one digit for green, and one digit for blue.
+
+This reduces the total number of possible colors to around 4,000. But browsers will interpret `#FF0000` and `#F00` as exactly the same color.
+
+Go ahead, try using the abbreviated hex codes to color the correct elements.
+
+| Color Hex   | Code    |
+|:----------- |:--------|
+| Cyan        | #0FF    |
+| Green       | #0F0    |
+| Red         | #F00    |
+| Fuchsia     | #F0F    |
+
+```html
+<style>
+  .red-text {
+    color: #F00;
+  }
+  .fuchsia-text {
+    color: #F0F;
+  }
+  .cyan-text {
+    color: #0FF;
+  }
+  .green-text {
+    color: #0F0;
+  }
+</style>
+
+<h1 class="red-text">I am red!</h1>
+
+<h1 class="fuchsia-text">I am fuchsia!</h1>
+
+<h1 class="cyan-text">I am cyan!</h1>
+
+<h1 class="green-text">I am green!</h1>
+```
+
+## Use RGB values to Color Elements
+
+Another way you can represent colors in CSS is by using RGB values.
+
+The RGB value for black looks like this:
+
+rgb(0, 0, 0)
+
+The RGB value for white looks like this:
+
+rgb(255, 255, 255)
+
+Instead of using six hexadecimal digits like you do with hex code, with `RGB` you specify the brightness of each color with a number between `0 `and 255.
+
+If you do the math, the two digits for one color equal 16 times 16, which gives us 256 total values. So RGB, which starts counting from zero, has the exact same number of possible values as hex code.
+
+Let's replace the hex code in our body element's background color with the RGB value for black: `rgb(0, 0, 0)`
+
+```html
+<style>
+  body {
+    background-color: rgb(0,0,0);
+  }
+</style>
+```
+
+## Use RGB to Mix Colors
+
+Just like with hex code, you can mix colors in RGB by using combinations of different values.
+
+Replace the color words in our `style` element with their correct RGB values.
+
+|Color	| RGB               |
+|:------|:------------------|
+|Blue	  | rgb(0, 0, 255)    |
+|Red    |	rgb(255, 0, 0)    |
+|Orchid	| rgb(218, 112, 214)|
+|Sienna	| rgb(160, 82, 45)  |
+
+```html
+<style>
+  .red-text {
+    color: rgb(255,0,0);
+  }
+  .orchid-text {
+    color: rgb(218,112,214);
+  }
+  .sienna-text {
+    color: rgb(160,82,45);
+  }
+  .blue-text {
+    color: rgb(0,0,255);
+  }
+</style>
+
+<h1 class="red-text">I am red!</h1>
+
+<h1 class="orchid-text">I am orchid!</h1>
+
+<h1 class="sienna-text">I am sienna!</h1>
+
+<h1 class="blue-text">I am blue!</h1>
 ```
