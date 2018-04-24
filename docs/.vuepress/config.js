@@ -5,7 +5,7 @@ module.exports = {
   description: "All Learning Resource for me",
   themeConfig: {
     repo: "artdvp/artdvp-doc",
-    nav: [{ text: "Learn", link: "/learn/" }],
+    nav: [{ text: "Learn", link: "/learn/" }, {text: "iBuild", link: "/ibuild/"}],
     sidebar: {
       "/learn/": [
         {
@@ -25,14 +25,14 @@ module.exports = {
         {
           title: "Site Pin",
           collapsable: false,
-          children: ["","pin","sitedev"]
+          children: ["","pin","selflearn","sitedev"]
         }
       ],
       '/javascript/': [
         {
           title: "JavaScript",
           collapsable: false,
-          children: ["","javascript_pin"]
+          children: ["","javascript_pin","modern-js-cheatsheet"]
         }
       ],
       '/git/': [
@@ -46,7 +46,14 @@ module.exports = {
         {
           title: "Free Code Camp",
           collapsable: false,
-          children: ["","frontend-htmlcss"]
+          children: ["","frontend-htmlcss","frontend-responsive"]
+        }
+      ],
+      '/ibuild/': [
+        {
+          title: "I Build",
+          collapsable: false,
+          children: ["","ibuildvue"]
         }
       ]
     }
