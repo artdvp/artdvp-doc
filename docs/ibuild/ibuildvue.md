@@ -26,6 +26,6 @@ Tech Stack : [Nuxt.js](https://nuxtjs.org/), [Storyblok](https://www.storyblok.c
 ![Imgur](https://i.imgur.com/ZMwO86K.png)
 
 ::: tip Completed
-Demo : [I Build This](https://vue-repos-parcel.netlify.com/)
-Github : []()
+Demo : [I Build This](https://vue-repos-parcel.netlify.com/) <br>
+Github : [vue-axios-ghrepos](https://github.com/artdvp/vue-axios-ghrepos)
 :::
