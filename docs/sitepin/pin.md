@@ -6,9 +6,24 @@ Collection site for dev
 
 - [freeCodeCampGuide](https://guide.freecodecamp.org/)
 
+## Dev News
+
+- [Stackshare](https://stackshare.io/news)
+
 ## Community Dev
 
 - [dev.to](https://dev.to/)
+- [stackoverflow](https://stackoverflow.com/)
+
+## DevOps 
+
+- [Docker]()
+- [Docker Hub]()
+- [Heroku](https://www.heroku.com/) | Development Deploy
+
+## Machine Learning
+
+- [Kaggle](https://www.kaggle.com/)
 
 ## Vue Resource
 
