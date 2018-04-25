@@ -8,4 +8,7 @@ sidebar: false
 - [Git](../git/)
 - [GraphQL](../graphql/)
 - [JavaScript](../javascript/)
+
+## Collection
+
 - [Site Pin](../sitepin/)
