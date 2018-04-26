@@ -55,6 +55,13 @@ module.exports = {
           collapsable: false,
           children: ["","ibuildvue"]
         }
+      ],
+      '/css/': [
+        {
+          title: "CSS",
+          collapsable: false,
+          children: ["","css-basic"]
+        }
       ]
     }
   },

@@ -17,9 +17,16 @@ Collection site for dev
 
 ## DevOps 
 
-- [Docker]()
-- [Docker Hub]()
-- [Heroku](https://www.heroku.com/) | Development Deploy
+- [Docker](https://www.docker.com/)
+- [Docker Hub](https://hub.docker.com/)
+
+## Serverless
+
+- [Heroku](https://www.heroku.com/) |  Deploy
+- [Firebase](https://firebase.google.com/)
+- [Netlify](https://www.netlify.com/)
+- [Now](https://zeit.co/now)
+- [Surge](http://surge.sh/)
 
 ## Machine Learning
 
@@ -27,7 +34,8 @@ Collection site for dev
 
 ## Vue Resource
 
-- [Vue.js](https://vuejs.org/)
+- [Vue.js](https://vuejs.org/) | The Progressive
+JavaScript Framework
 - [Nuxt.js](https://nuxtjs.org/) | Universal Vue.js Applications
 - [Vuepress](https://vuepress.vuejs.org/) | Vue-powered Static Site Generator
 
