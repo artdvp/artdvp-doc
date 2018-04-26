@@ -2,6 +2,22 @@
 
 I learn and build with Vue
 
+## Nuxt.js - Vue.js Contributors
+
+![Imgur](https://i.imgur.com/LUZhLtt.png)
+
+::: tip Completed
+Demo : [I Build This](https://vue-contributors.netlify.com/)
+<br>
+Github : [vue-nuxt-contributors](https://github.com/artdvp/vue-nuxt-contributors)
+:::
+
+Inspiration from FrontEnd Conf Amsterdam
+
+- [Alexandre Chopin - Speed up your Vue js development time with Nuxt.js](https://www.youtube.com/watch?v=4wQpuJo6RzM&t=880s)
+
+---
+
 ## Nuxt.js & Storyblok - Building Complete Blog
 
 ![Imgur](https://i.imgur.com/ehw1btX.png)
@@ -29,3 +45,19 @@ Tech Stack : [Nuxt.js](https://nuxtjs.org/), [Storyblok](https://www.storyblok.c
 Demo : [I Build This](https://vue-repos-parcel.netlify.com/) <br>
 Github : [vue-axios-ghrepos](https://github.com/artdvp/vue-axios-ghrepos)
 :::
+
+--- 
+
+
+## Vue.js Mastery Course
+
+![Imgur](https://i.imgur.com/osPZwIP.png)
+
+::: tip Completed
+Demo : [I Build This](https://artdvp.github.io/vue-mastery-course/Intro-to-Vuejs/) <br>
+Github : [vue-mastery-course](https://github.com/artdvp/vue-mastery-course)
+:::
+
+**Source I learn**
+
+* [Vuemastery](https://www.vuemastery.com/)
