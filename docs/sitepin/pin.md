@@ -34,11 +34,11 @@ Collection site for dev
 
 ## Vue Resource
 
-- [Vue.js](https://vuejs.org/) | The Progressive
+- [Vue.js](https://vuejs.org/) - The Progressive
 JavaScript Framework
-- [Nuxt.js](https://nuxtjs.org/) | Universal Vue.js Applications
-- [Vuepress](https://vuepress.vuejs.org/) | Vue-powered Static Site Generator
+- [Nuxt.js](https://nuxtjs.org/) - Universal Vue.js Applications
+- [Vuepress](https://vuepress.vuejs.org/) - Vue-powered Static Site Generator
 
 ## CMS Serverless
 
-- [Contentful](https://www.contentful.com/) | Contentful provides content infrastructure that enables teams to power content in any digital product.
+- [Contentful](https://www.contentful.com/) - Contentful provides content infrastructure that enables teams to power content in any digital product.
