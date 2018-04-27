@@ -6,4 +6,4 @@
 
 ## Learn by Interactive
 
-- [next.xyz](https://www.next.xyz/) | Learn Python, HTML, Java
+- [next.xyz](https://www.next.xyz/) - Learn Python, HTML, Java
