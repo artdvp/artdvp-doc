@@ -2,7 +2,7 @@
 
 I learn and build with Vue
 
-## Nuxt.js - Vue.js Contributors
+## Vue.js Contributors - Nuxt.js 
 
 ![Imgur](https://i.imgur.com/LUZhLtt.png)
 
@@ -18,7 +18,7 @@ Inspiration from FrontEnd Conf Amsterdam
 
 ---
 
-## Nuxt.js & Storyblok - Building Complete Blog
+## Building Complete Blog - Nuxt.js + Storyblok 
 
 ![Imgur](https://i.imgur.com/ehw1btX.png)
 
@@ -37,7 +37,7 @@ Tech Stack : [Nuxt.js](https://nuxtjs.org/), [Storyblok](https://www.storyblok.c
 
 --- 
 
-## Vue.js & Axios & Github API
+## User Repos - Vue.js + Axios + Parcel + Github API 
 
 ![Imgur](https://i.imgur.com/ZMwO86K.png)
 
@@ -61,3 +61,25 @@ Github : [vue-mastery-course](https://github.com/artdvp/vue-mastery-course)
 **Source I learn**
 
 * [Vuemastery](https://www.vuemastery.com/)
+
+---
+
+## Repos Github - Vue.js + Github API
+
+![Imgur](https://i.imgur.com/xvKc1vi.png)
+
+::: tip Completed
+Demo : [I Build This](https://artdvp.github.io/vue-repo-gh/)<br>
+Github : [vue-repo-gh](https://github.com/artdvp/vue-repo-gh)
+:::
+
+## Reddit New Feed - Vue.js 
+
+![Imgur](https://i.imgur.com/vkgnBlV.png)
+
+::: tip Completed
+Demo : [I Build This](https://artdvp.github.io/vue-reddit-new-feed/)<br>
+Github : [vue-reddit-new-feed](https://github.com/artdvp/vue-reddit-new-feed)
+:::
+
+---
