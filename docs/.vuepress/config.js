@@ -53,7 +53,7 @@ module.exports = {
         {
           title: "I Build",
           collapsable: false,
-          children: ["","ibuildvue"]
+          children: ["","ibuild4learn","ibuildvue"]
         }
       ],
       '/css/': [
