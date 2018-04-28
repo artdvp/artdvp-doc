@@ -907,7 +907,6 @@ The i element was originally used to make other elements italic, but is now comm
 Use Font Awesome to add a `thumbs-up` icon to your like button by giving it an `i` element with the classes `fa` and `fa-thumbs-up`.
 
 ```html
-
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
   h2 {
@@ -1112,7 +1111,6 @@ You can use Bootstrap's `col-xs-*` classes on `form` elements, too! This way, ou
 Nest all your checkboxes in a `<div class="row">` element. Then nest each of them in a `<div class="col-xs-4">` element.
 
 ```html
-
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
   h2 {
@@ -1194,7 +1192,6 @@ You can add the `fa-paper-plane` Font Awesome icon by adding `<i class="fa fa-pa
 Give your form's text input field a class of `form-control`. Give your form's submit button the classes `btn btn-primary`. Also give this button the Font Awesome icon of `fa-paper-plane`.
 
 ```html
-
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
   h2 {
@@ -1278,7 +1275,6 @@ Nest both your form's text `input` and submit `button` within a `div` with the c
 This is the last challenge we'll do for our Cat Photo App for now. We hope you've enjoyed learning Font Awesome, Bootstrap, and responsive design!
 
 ```html
-
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
   h2 {
@@ -1336,7 +1332,7 @@ This is the last challenge we'll do for our Cat Photo App for now. We hope you'v
         <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
       </div>
     </div>
-    
+
     <div class="row">
       <div class="col-xs-4">
         <label><input type="checkbox" name="personality"> Loving</label>
@@ -1348,7 +1344,7 @@ This is the last challenge we'll do for our Cat Photo App for now. We hope you'v
         <label><input type="checkbox" name="personality"> Crazy</label>
       </div>
     </div>
-   
+
     <div class="row">
       <div class="col-xs-7">
         <input type="text" class="form-control" placeholder="cat photo URL" required>
@@ -1359,7 +1355,165 @@ This is the last challenge we'll do for our Cat Photo App for now. We hope you'v
     </div>
   </form>
 </div>
-
 ```
 
 ## Create a Bootstrap Headline
+
+Now let's build something from scratch to practice our HTML, CSS and Bootstrap skills.
+
+We'll build a jQuery playground, which we'll soon put to use in our jQuery challenges.
+
+To start with, create an `h3` element, with the text `jQuery Playground`.
+
+Color your `h3` element with the `text-primary` Bootstrap class, and center it with the `text-center` Bootstrap class.
+
+```html
+<h3 class="text-primary text-center">jQuery Playground</h3>
+```
+
+## House our page within a Bootstrap Container Fluid Div
+
+Now let's make sure all the content on your page is mobile-responsive.
+
+Let's nest your `h3` element within a `div` element with the class `container-fluid`.
+
+```html
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+</div>
+```
+
+## Create a Bootstrap Row
+
+Now we'll create a Bootstrap row for our inline elements.
+
+Create a `div` element below the `h3` tag, with a class of row.
+
+```html
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+  </div>
+</div>
+```
+
+## Split your Bootstrap Row
+
+Now that we have a Bootstrap Row, let's split it into two columns to house our elements.
+
+Create two `div` elements within your row, both with the class `col-xs-6`.
+
+```html
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6"></div>
+    <div class="col-xs-6"></div>
+  </div>
+</div>
+```
+
+## Create Bootstrap Wells
+
+Bootstrap has a class called `well` that can create a visual sense of depth for your columns.
+
+Nest one `div` element with the class `well` within each of your `col-xs-6` div elements.
+
+```html
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="well"></div>
+    </div>
+    <div class="col-xs-6">
+      <div class="well"></div>
+    </div>
+  </div>
+</div>
+```
+
+## Add Elements within your Bootstrap Wells
+
+Now we're several `div` elements deep on each column of our row. This is as deep as we'll need to go. Now we can add our `button` elements.
+
+Nest three `button` elements within each of your `well` `div` elements.
+
+```html
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="well">
+        <button class="well"></button>
+        <button class="well"></button>
+        <button class="well"></button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="well">
+        <button class="well"></button>
+        <button class="well"></button>
+        <button class="well"></button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+## Apply the Default Bootstrap Button Style
+
+Bootstrap has another button class called `btn-default`.
+
+Apply both the `btn` and `btn-default` classes to each of your `button` elements.
+
+
+```html
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="well">
+        <button class="btn btn-default"></button>
+        <button class="btn btn-default"></button>
+        <button class="btn btn-default"></button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="well">
+        <button class="btn btn-default"></button>
+        <button class="btn btn-default"></button>
+        <button class="btn btn-default"></button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+## Create a Class to Target with jQuery Selectors
+
+Not every class needs to have corresponding CSS. Sometimes we create classes just for the purpose of selecting these elements more easily using jQuery.
+
+Give each of your `button` elements the class `target`.
+
+```html
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="well">
+        <button class="btn btn-default target"></button>
+        <button class="btn btn-default target"></button>
+        <button class="btn btn-default target"></button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="well">
+        <button class="btn btn-default target"></button>
+        <button class="btn btn-default target"></button>
+        <button class="btn btn-default target"></button>
+      </div>
+    </div>
+  </div>
+</div>
+```
