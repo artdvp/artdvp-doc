@@ -46,7 +46,7 @@ module.exports = {
         {
           title: "Free Code Camp",
           collapsable: false,
-          children: ["","frontend-htmlcss","frontend-responsive"]
+          children: ["","frontend-htmlcss","frontend-responsive","frontend-jquery"]
         }
       ],
       '/ibuild/': [

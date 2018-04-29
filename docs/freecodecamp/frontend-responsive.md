@@ -16,6 +16,8 @@ In this case, we've already added it for you to this page behind the scenes.
 
 To get started, we should nest all of our HTML in a `div` element with the class `container-fluid`.
 
+> Practice
+
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
@@ -81,6 +83,8 @@ First, add a new image below the existing one. Set its `src` attribute to `https
 It would be great if this image could be exactly the width of our phone's screen.
 
 Fortunately, with Bootstrap, all we need to do is add the `img-responsive` class to your image. Do this, and the image should perfectly fit the width of your page.
+
+> Practice
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -151,6 +155,8 @@ Remember that you can add several classes to the same element by separating each
 
 `<h2 class="red-text text-center">your text</h2>`
 
+> Practice
+
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
@@ -216,6 +222,8 @@ Remember that you can add several classes to the same element by separating each
 Bootstrap has its own styles for `button` elements, which look much better than the plain HTML ones.
 
 Create a new `button` element below your large kitten photo. Give it the class `btn` and the text of "Like".
+
+> Practice
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -298,6 +306,8 @@ Note that these buttons still need the `btn` class.
 
 Add Bootstrap's `btn-block` class to your Bootstrap button.
 
+> Practice
+
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
@@ -366,6 +376,8 @@ The `btn-primary` class is the main color you'll use in your app. It is useful f
 Add Bootstrap's `btn-primary` class to your button.
 
 Note that this button will still need the `btn` and `btn-block` classes.
+
+> Practice
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -436,6 +448,8 @@ Create a new block-level Bootstrap button below your "Like" button with the text
 
 Note that these buttons still need the `btn` and `btn-block` classes.
 
+> Practice
+
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
@@ -505,6 +519,8 @@ Bootstrap comes with several pre-defined colors for buttons. The `btn-danger` cl
 Create a button with the text "Delete" and give it the class `btn-danger`.
 
 Note that these buttons still need the `btn` and `btn-block` classes.
+
+> Practice
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -584,6 +600,8 @@ In the Cat Photo App that we're building, we'll use `col-xs-*`, where `xs` means
 Put the `Like`, `Info` and `Delete` buttons side-by-side by nesting all three of them within one `<div class="row">` element, then each of them within a `<div class="col-xs-4">` element.
 
 The `row` class is applied to a `div`, and the buttons themselves can be nested within it.
+
+> Practice
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -667,6 +685,8 @@ Delete the `.red-text`, `p`, and `.smaller-image` CSS declarations from your `st
 Then delete the `p` element that contains a dead link. Then remove the `red-text` class from your `h2` element and replace it with the `text-primary` Bootstrap class.
 
 Finally, remove the "smaller-image" class from your first `img` element and replace it with the `img-responsive` class.
+
+> Practice
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -754,6 +774,8 @@ Here's how you would do this with the "Top 3 things cats hate" element:
 
 `<p>Top 3 things cats <span class = "text-danger">hate:</span></p>`
 
+> Practice
+
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
@@ -829,6 +851,8 @@ In the Cat Photo App that we're building, we'll use `col-xs-*`, where `xs` means
 Nest your first image and your `h2` element within a single `<div class="row">` element. Nest your `h2` element within a `<div class="col-xs-8">`and your image in a `<div class="col-xs-4">` so that they are on the same line.
 
 Notice how the image is now just the right size to fit along the text?
+
+> Practice
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -906,6 +930,8 @@ The i element was originally used to make other elements italic, but is now comm
 
 Use Font Awesome to add a `thumbs-up` icon to your like button by giving it an `i` element with the classes `fa` and `fa-thumbs-up`.
 
+> Practice
+
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
@@ -972,6 +998,8 @@ Font Awesome is a convenient library of icons. These icons are vector graphics, 
 
 Use Font Awesome to add an `info-circle` icon to your info button and a `trash` icon to your delete button.
 
+> Practice
+
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
@@ -1037,6 +1065,8 @@ Use Font Awesome to add an `info-circle` icon to your info button and a `trash` 
 You can use Bootstrap's `col-xs-*` classes on `form` elements, too! This way, our radio buttons will be evenly spread out across the page, regardless of how wide the screen resolution is.
 
 Nest all of your radio buttons within a `<div class="row">` element. Then nest each of them within a `<div class="col-xs-6">` element.
+
+> Practice
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -1109,6 +1139,8 @@ Nest all of your radio buttons within a `<div class="row">` element. Then nest e
 You can use Bootstrap's `col-xs-*` classes on `form` elements, too! This way, our checkboxes will be evenly spread out across the page, regardless of how wide the screen resolution is.
 
 Nest all your checkboxes in a `<div class="row">` element. Then nest each of them in a `<div class="col-xs-4">` element.
+
+> Practice
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -1190,6 +1222,8 @@ Nest all your checkboxes in a `<div class="row">` element. Then nest each of the
 You can add the `fa-paper-plane` Font Awesome icon by adding `<i class="fa fa-paper-plane"></i>` within your submit `button` element.
 
 Give your form's text input field a class of `form-control`. Give your form's submit button the classes `btn btn-primary`. Also give this button the Font Awesome icon of `fa-paper-plane`.
+
+> Practice
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -1273,6 +1307,8 @@ Now let's get your form `input` and your submission `button` on the same line. W
 Nest both your form's text `input` and submit `button` within a `div` with the class row. Nest your form's text input within a div with the class of `col-xs-7`. Nest your form's submit `button` in a `div` with the class `col-xs-5`.
 
 This is the last challenge we'll do for our Cat Photo App for now. We hope you've enjoyed learning Font Awesome, Bootstrap, and responsive design!
+
+> Practice
 
 ```html
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -1367,6 +1403,8 @@ To start with, create an `h3` element, with the text `jQuery Playground`.
 
 Color your `h3` element with the `text-primary` Bootstrap class, and center it with the `text-center` Bootstrap class.
 
+> Practice
+
 ```html
 <h3 class="text-primary text-center">jQuery Playground</h3>
 ```
@@ -1376,6 +1414,8 @@ Color your `h3` element with the `text-primary` Bootstrap class, and center it w
 Now let's make sure all the content on your page is mobile-responsive.
 
 Let's nest your `h3` element within a `div` element with the class `container-fluid`.
+
+> Practice
 
 ```html
 <div class="container-fluid">
@@ -1388,6 +1428,8 @@ Let's nest your `h3` element within a `div` element with the class `container-fl
 Now we'll create a Bootstrap row for our inline elements.
 
 Create a `div` element below the `h3` tag, with a class of row.
+
+> Practice
 
 ```html
 <div class="container-fluid">
@@ -1402,6 +1444,8 @@ Create a `div` element below the `h3` tag, with a class of row.
 Now that we have a Bootstrap Row, let's split it into two columns to house our elements.
 
 Create two `div` elements within your row, both with the class `col-xs-6`.
+
+> Practice
 
 ```html
 <div class="container-fluid">
@@ -1418,6 +1462,8 @@ Create two `div` elements within your row, both with the class `col-xs-6`.
 Bootstrap has a class called `well` that can create a visual sense of depth for your columns.
 
 Nest one `div` element with the class `well` within each of your `col-xs-6` div elements.
+
+> Practice
 
 ```html
 <div class="container-fluid">
@@ -1438,6 +1484,8 @@ Nest one `div` element with the class `well` within each of your `col-xs-6` div 
 Now we're several `div` elements deep on each column of our row. This is as deep as we'll need to go. Now we can add our `button` elements.
 
 Nest three `button` elements within each of your `well` `div` elements.
+
+> Practice
 
 ```html
 <div class="container-fluid">
@@ -1467,6 +1515,7 @@ Bootstrap has another button class called `btn-default`.
 
 Apply both the `btn` and `btn-default` classes to each of your `button` elements.
 
+> Practice
 
 ```html
 <div class="container-fluid">
@@ -1496,6 +1545,8 @@ Not every class needs to have corresponding CSS. Sometimes we create classes jus
 
 Give each of your `button` elements the class `target`.
 
+> Practice
+
 ```html
 <div class="container-fluid">
   <h3 class="text-primary text-center">jQuery Playground</h3>
@@ -1517,3 +1568,188 @@ Give each of your `button` elements the class `target`.
   </div>
 </div>
 ```
+
+## Add ID Attributes to Bootstrap Elements
+
+Recall that in addition to class attributes, you can give each of your elements an `id` attribute.
+
+Each id must be unique to a specific element and used only once per page.
+
+Let's give a unique id to each of our div elements of class `well`.
+
+Remember that you can give an element an id like this:
+
+`<div class="well" id="center-well">`
+
+> Practice
+
+```html
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="well" id="left-well">
+        <button class="btn btn-default target"></button>
+        <button class="btn btn-default target"></button>
+        <button class="btn btn-default target"></button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="well" id="right-well">
+        <button class="btn btn-default target"></button>
+        <button class="btn btn-default target"></button>
+        <button class="btn btn-default target"></button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+## Label Bootstrap Wells
+
+For the sake of clarity, let's label both of our wells with their ids.
+
+Above your left-well, inside its `col-xs-6` `div` element, add a `h4` element with the text `#left-well`.
+
+Above your right-well, inside its `col-xs-6` `div` element, add a `h4` element with the text `#right-well`.
+
+> Practice
+
+```html
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target"></button>
+        <button class="btn btn-default target"></button>
+        <button class="btn btn-default target"></button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target"></button>
+        <button class="btn btn-default target"></button>
+        <button class="btn btn-default target"></button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+## Give Each Element a Unique ID
+
+We will also want to be able to use jQuery to target each button by its unique id.
+
+Give each of your buttons a unique id, starting with `target1` and ending with `target6`.
+
+Make sure that `target1` to `target3` are in `#left-well`, and `target4` to `target6` are in `#right-well`.
+
+> Practice
+
+```html
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1"></button>
+        <button class="btn btn-default target" id="target2"></button>
+        <button class="btn btn-default target" id="target3"></button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4"></button>
+        <button class="btn btn-default target" id="target5"></button>
+        <button class="btn btn-default target" id="target6"></button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+## Label Bootstrap Buttons
+
+Just like we labeled our wells, we want to label our buttons.
+
+Give each of your `button` elements text that corresponds to its `id`'s selector.
+
+> Practice
+
+```html
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">
+          #target2
+        </button>
+        <button class="btn btn-default target" id="target3">
+          #target3
+        </button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">
+          #target4
+        </button>
+        <button class="btn btn-default target" id="target5">
+          #target5
+        </button>
+        <button class="btn btn-default target" id="target6">
+          #target6
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+## Use Comments to Clarify Code
+
+When we start using jQuery, we will modify HTML elements without needing to actually change them in HTML.
+
+Let's make sure that everyone knows they shouldn't actually modify any of this code directly.
+
+Remember that you can start a comment with `<!--` and end a comment with `-->`
+
+Add a comment at the top of your HTML that says `Only change code above this line`.
+
+> Practice
+
+```html
+<!-- Only changecode above this line -->
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+---

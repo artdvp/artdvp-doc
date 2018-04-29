@@ -1978,7 +1978,7 @@ Change the `margin` of the green box to match that of the red box.
     background-color: yellow;
     padding: 10px;
   }
-  
+
   .red-box {
     background-color: red;
     padding: 20px;
@@ -2029,7 +2029,7 @@ Change the `margin` of the green box to `-15px`, so it fills the entire horizont
     background-color: yellow;
     padding: 10px;
   }
-  
+
   .red-box {
     background-color: red;
     padding: 20px;
@@ -2077,7 +2077,7 @@ Give the green box a `padding` of `40px` on its top and left side, but only `20p
     background-color: yellow;
     padding: 10px;
   }
-  
+
   .red-box {
     background-color: red;
     padding-top: 40px;
@@ -2130,7 +2130,7 @@ Give the green box a `margin` of `40px` on its top and left side, but only `20px
     background-color: yellow;
     padding: 10px;
   }
-  
+
   .red-box {
     background-color: red;
     margin-top: 40px;
@@ -2185,7 +2185,7 @@ Use Clockwise Notation to give the ".green-box" class a `padding` of `40px` on i
     background-color: yellow;
     padding: 20px 40px 20px 40px;
   }
-  
+
   .red-box {
     background-color: red;
     padding: 20px 40px 20px 40px;
@@ -2234,7 +2234,7 @@ Use `Clockwise Notation` to give the element with the `green-box` class a margin
     background-color: yellow;
     padding: 20px 40px 20px 40px;
   }
-  
+
   .red-box {
     background-color: red;
     margin: 20px 40px 20px 40px;
@@ -2294,7 +2294,6 @@ Finally, give your `body` element the `font-family` of `Monospace` by adding `fo
 > Practice
 
 ```html
-
 <style>
   body {
     background-color: black;
@@ -2328,7 +2327,7 @@ Give your `h1` element the class of `pink-text`.
     font-family: Monospace;
     color: green;
   }
-  
+
   .pink-text {
     color: pink;
   }
@@ -2364,7 +2363,7 @@ However, the order of the class declarations in the `<style>` section are what i
   .pink-text {
     color: pink;
   }
-  
+
   .blue-text {
     color: blue;
   }
@@ -2393,6 +2392,7 @@ Create a CSS declaration for your `orange-text` id in your `style` element. Here
   color: brown;
 }
 ```
+
 Note: It doesn't matter whether you declare this css above or below pink-text class, since id attribute will always take precedence.
 
 ```html
@@ -2408,7 +2408,7 @@ Note: It doesn't matter whether you declare this css above or below pink-text cl
   .blue-text {
     color: blue;
   }
-  
+
   #orange-text {
     color: orange;
   }
@@ -2466,6 +2466,8 @@ An example of how to do this is:
 
 `color: red !important;`
 
+> Practice
+
 ```html
 <style>
   body {
@@ -2496,6 +2498,8 @@ In CSS, we can use 6 hexadecimal digits to represent colors, two each for the re
 
 Replace the word `black` in our `body` element's background-color with its `hex code` representation, `#000000`.
 
+> Practice
+
 ```html
 <style>
   body {
@@ -2519,11 +2523,13 @@ The digit F is the highest number in hex code, and represents the maximum possib
 Replace the color words in our style element with their correct hex codes.
 
 | Color Hex   | Code    |
-|:----------- |:--------|
+| :---------- | :------ |
 | Dodger Blue | #2998E4 |
 | Green       | #00FF00 |
 | Orange      | #FFA500 |
 | Red         | #FF0000 |
+
+> Practice
 
 ```html
 <style>
@@ -2560,12 +2566,14 @@ This reduces the total number of possible colors to around 4,000. But browsers w
 
 Go ahead, try using the abbreviated hex codes to color the correct elements.
 
-| Color Hex   | Code    |
-|:----------- |:--------|
-| Cyan        | #0FF    |
-| Green       | #0F0    |
-| Red         | #F00    |
-| Fuchsia     | #F0F    |
+| Color Hex | Code |
+| :-------- | :--- |
+| Cyan      | #0FF |
+| Green     | #0F0 |
+| Red       | #F00 |
+| Fuchsia   | #F0F |
+
+> Practice
 
 ```html
 <style>
@@ -2604,7 +2612,7 @@ The RGB value for white looks like this:
 
 rgb(255, 255, 255)
 
-Instead of using six hexadecimal digits like you do with hex code, with `RGB` you specify the brightness of each color with a number between `0 `and 255.
+Instead of using six hexadecimal digits like you do with hex code, with `RGB` you specify the brightness of each color with a number between `0`and 255.
 
 If you do the math, the two digits for one color equal 16 times 16, which gives us 256 total values. So RGB, which starts counting from zero, has the exact same number of possible values as hex code.
 
@@ -2624,12 +2632,14 @@ Just like with hex code, you can mix colors in RGB by using combinations of diff
 
 Replace the color words in our `style` element with their correct RGB values.
 
-|Color	| RGB               |
-|:------|:------------------|
-|Blue	  | rgb(0, 0, 255)    |
-|Red    |	rgb(255, 0, 0)    |
-|Orchid	| rgb(218, 112, 214)|
-|Sienna	| rgb(160, 82, 45)  |
+| Color  | RGB                |
+| :----- | :----------------- |
+| Blue   | rgb(0, 0, 255)     |
+| Red    | rgb(255, 0, 0)     |
+| Orchid | rgb(218, 112, 214) |
+| Sienna | rgb(160, 82, 45)   |
+
+> Practice
 
 ```html
 <style>
@@ -2655,3 +2665,5 @@ Replace the color words in our `style` element with their correct RGB values.
 
 <h1 class="blue-text">I am blue!</h1>
 ```
+
+----
