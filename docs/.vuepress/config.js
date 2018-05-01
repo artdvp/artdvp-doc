@@ -46,7 +46,7 @@ module.exports = {
         {
           title: "Free Code Camp",
           collapsable: false,
-          children: ["","frontend-htmlcss","frontend-responsive","frontend-jquery"]
+          children: ["","frontend-htmlcss","frontend-responsive","frontend-jquery","basic-frontend-project"]
         }
       ],
       '/ibuild/': [
@@ -61,6 +61,27 @@ module.exports = {
           title: "CSS",
           collapsable: false,
           children: ["","css-basic"]
+        }
+      ],
+      '/docker/': [
+        {
+          title: "Docker",
+          collapsable: false,
+          children: [""]
+        }
+      ],
+      '/foundation/': [
+        {
+          title: "Basic Foundation",
+          collapsable: false,
+          children: ["","makewebsite-with-codecademy"]
+        }
+      ],
+      '/commandline/': [
+        {
+          title: "Command Line",
+          collapsable: false,
+          children: ["","commandline-with-codecademy"]
         }
       ]
     }
