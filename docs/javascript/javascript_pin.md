@@ -8,3 +8,4 @@
 ## ES6
 
 - [Introduction to commonly used ES6 features](https://zellwk.com/blog/es6/)
+- [ES6 & Beyond ](https://scrimba.com/playlist/p4Mrt9) - Introduction to ES6+ Features

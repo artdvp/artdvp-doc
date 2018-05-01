@@ -10,6 +10,9 @@ sidebar: false
 
 ## Index Group
 
+* [Basic Foundation](../foundation/)
+* [Command Line](../commandline/)
+* [Docker](../docker/)
 * [FreeCodeCamp](../freecodecamp/)
 * [Git](../git/)
 * [GraphQL](../graphql/)
