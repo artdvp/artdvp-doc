@@ -2,14 +2,14 @@
 
 ## Basic
 
-> Git config
+### Git config
 
 ```bash
 $ git config --global user.name 'Name Surname'
 $ git config --global user.email 'name@example.com'
 ```
 
-> Create directory
+### Create directory
 
 ```bash
 $ mkdir begin
@@ -18,7 +18,7 @@ $ git init
 Initialized empty Git repository in ~/begin/.git/
 ```
 
-> Create file begin.txt
+### Create file begin.txt
 
 ```bash
 $ echo 'let begin' > begin.txt
@@ -26,7 +26,7 @@ $ cat begin.txt
 let begin
 ```
 
-> Git add file to git
+### Git add file to git
 
 ```bash
 $ git add begin.txt
@@ -34,7 +34,7 @@ warning: LF will be replaced by CRLF in begin.txt.
 The file will have its original line endings in your working directory.
 ```
 
-> Git Check status
+### Git Check status
 
 ```bash
 $ git status
@@ -48,7 +48,7 @@ Changes to be committed:
         new file:   begin.txt
 ```
 
-> Git Commit
+### Git Commit
 
 ```bash
 $ git commit -m 'add begin'
@@ -56,7 +56,7 @@ $ git commit -m 'add begin'
 warning: LF will be replaced by CRLF in begin.txt.
 ```
 
-> Check status add
+### Check status add
 
 ```bash
 $ git status
@@ -64,7 +64,7 @@ On branch master
 nothing to commit, working directory clean
 ```
 
-> Git edit and new file
+### Git edit and new file
 
 ```bash
 $ echo 'line second' >> begin.txt
@@ -72,7 +72,7 @@ $ echo 'git md' > README.md
 $ echo 'test' > test.md
 ```
 
-> Git check status
+### Git check status
 
 ```bash
 $ git status
@@ -93,7 +93,7 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-> Git add file new and checkus
+### Git add file new and checkus
 
 ```bash
 $ git add begin.txt RAEDME.md test.md
@@ -109,7 +109,7 @@ Changes to be committed:
         new file:   test.md
 ```
 
-> Git commit file
+### Git commit file
 
 ```bash
 $ git commit -m 'edit file and add'
@@ -119,7 +119,7 @@ The file will have its original line endings in your working directory.
  create mode 100644 test.md
 ```
 
-> Git edit file and remove file and commit
+### Git edit file and remove file and commit
 
 edit text 'test' to README.md
 
@@ -175,13 +175,13 @@ The file will have its original line endings in your working directory.
 
 ## Branch
 
-> Create Branch
+### Create Branch
 
 ```bash
 $ git branch hophop
 ```
 
-> Check Branch
+### Check Branch
 
 ```bash
 $ git branch
@@ -189,14 +189,14 @@ $ git branch
 * master
 ```
 
-> Switch to branch hophop
+### Switch to branch hophop
 
 ```bash
 $ git checkout hophop
 Switched to branch 'hophop'
 ```
 
-> Edit file and add new
+### Edit file and add new
 
 ```bash
 $ echo 'testt' >> begin.txt
@@ -223,14 +223,14 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-> Clean file git
+### Clean file git
 
 ```bash
 $ git clean -f
 Removing def.txt
 ```
 
-> Commit file commit `auto`
+### Commit file commit `auto`
 
 '-a' is add file auto
 
@@ -238,7 +238,7 @@ Removing def.txt
 $git commit -am 'update file'
 ```
 
-> Delete branch
+### Delete branch
 
 ```bash
 $ git checkout master
@@ -250,7 +250,7 @@ Deleted branch hophop (was 0aa8bda).
 
 ## Merge
 
-> Create New Branch and switch branch
+### Create New Branch and switch branch
 
 ```bash
 $ git checkout -b hiphip
@@ -278,14 +278,14 @@ The file will have its original line endings in your working directory.
  1 file changed, 1 insertion(+)
 ```
 
-> Switch to master
+### Switch to master
 
 ```bash
 $ git checkout master
 Switched to branch 'master'
 ```
 
-> Merge File
+### Merge File
 
 ```bash
 $ git merge hiphip
@@ -295,7 +295,7 @@ Fast-forward
  1 file changed, 1 insertion(+)
 ```
 
-> Delete branch hiphip '-d' is check branch has merge
+### Delete branch hiphip '-d' is check branch has merge
 
 ```bash
 $ git branch hiphip -d
