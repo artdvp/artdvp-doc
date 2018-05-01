@@ -1,4 +1,4 @@
-# About
+# About JavaScript
 
 ## Learn JavaScript
 
