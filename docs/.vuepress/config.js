@@ -83,6 +83,13 @@ module.exports = {
           collapsable: false,
           children: ["","commandline-with-codecademy"]
         }
+      ],
+      '/gitmd': [
+        {
+        title: "Git Markdown",
+        collapsable: false,
+        children: ["","awesome-vue"]
+        }
       ]
     }
   },
