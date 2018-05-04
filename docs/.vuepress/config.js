@@ -46,7 +46,7 @@ module.exports = {
         {
           title: "Free Code Camp",
           collapsable: false,
-          children: ["","frontend-htmlcss","frontend-responsive","frontend-jquery","basic-frontend-project"]
+          children: ["","frontend-htmlcss","frontend-responsive","frontend-jquery","basic-frontend-project","frontend-javascript"]
         }
       ],
       '/ibuild/': [
@@ -84,7 +84,7 @@ module.exports = {
           children: ["","commandline-with-codecademy"]
         }
       ],
-      '/gitmd': [
+      '/gitmd/': [
         {
         title: "Git Markdown",
         collapsable: false,
