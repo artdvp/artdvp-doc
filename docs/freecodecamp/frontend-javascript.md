@@ -341,6 +341,8 @@ In mathematics, a number can be checked even or odd by checking the remainder of
 
 The `remainder` operator is sometimes incorrectly referred to as the "modulus" operator. It is very similar to modulus, but does not work properly with negative numbers.
 
+> Practice
+
 ```js
 // Only change code below this line
 
@@ -360,6 +362,8 @@ to add `5` to `myVar`. Since this is such a common pattern, there are operators 
 One such operator is the `+=` operator.
 
 `myVar += 5;` will add `5` to `myVar`.
+
+> Practice
 
 ```js
 var a = 3;
@@ -383,6 +387,8 @@ will subtract `5` from `myVar`. This can be rewritten as:
 
 `myVar -= 5;`
 
+> Practice
+
 ```js
 var a = 11;
 var b = 9;
@@ -404,6 +410,8 @@ The `*=` operator multiplies a variable by a number.
 will multiply `myVar` by `5`. This can be rewritten as:
 
 `myVar *= 5;`
+
+> Practice
 
 ```js
 var a = 5;
@@ -427,6 +435,8 @@ Will divide `myVar` by `5.` This can be rewritten as:
 
 `myVar /= 5;`
 
+> Practice
+
 ```js
 var a = 48;
 var b = 108;
@@ -446,6 +456,8 @@ To test your learning, you will create a solution "from scratch". Place your cod
 The algorithm to convert from Celsius to Fahrenheit is the temperature in Celsius times `9/5`, plus `32`.
 
 You are given a variable `celsius` representing a temperature in Celsius. Use the variable `fahrenheit` already defined and apply the algorithm to assign it the corresponding temperature in Fahrenheit.
+
+> Practice
 
 ```js
 function convertToF(celsius) {
@@ -469,6 +481,8 @@ Previously we have used the code
 
 `"your name"` is called a `string literal`. It is a string because it is a series of zero or more characters enclosed in single or double quotes.
 
+> Practice
+
 ```js
 // Example
 var firstName = "Alan";
@@ -491,6 +505,8 @@ This signals to JavaScript that the following quote is not the end of the string
 
 `Alan said, "Peter is learning JavaScript".`
 
+> Practice
+
 ```js
 var myStr = 'I am a "double quoted" string inside "double quotes".'; // Change this line
 ```
@@ -506,6 +522,8 @@ The value in using one or the other has to do with the need to `escape` quotes o
 If you have a string with many double quotes, this can be difficult to read and write. Instead, use single quotes:
 
 `'This string has "double quotes" in it. And "probably" lots of them.'`
+
+> Practice
 
 ```js
 var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
@@ -527,6 +545,8 @@ Quotes are not the only characters that can be `escaped` inside a string. Here i
 | \f   | form feed       |
 
 Note that the backslash itself must be escaped in order to display as a backslash.
+
+> Practice
 
 ```js
 var myStr = "FirstLine\n\\SecondLine\\\rThirdLine"; // Change this line
@@ -551,6 +571,8 @@ In JavaScript, when the `+` operator is used with a `String` value, it is called
 
 Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
 
+> Practice
+
 ```js
 // Example
 var ourStr = "I come first. " + "I come second.";
@@ -568,6 +590,8 @@ We can also use the `+=` operator to `concatenate` a string onto the end of an e
 
 Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
 
+> Practice
+
 ```js
 // Example
 var ourStr = "I come first. ";
@@ -583,6 +607,8 @@ myStr += "This is the second sentence.";
 
 Sometimes you will need to build a string, [Mad Libs](https://en.wikipedia.org/wiki/Mad_Libs) style. By using the concatenation operator (`+`), you can insert one or more variables into a string you're building.
 
+> Practice
+
 ```js
 // Example
 var ourName = "Free Code Camp";
@@ -596,6 +622,8 @@ var myStr = "My name is " + myName + " and I am swell!";
 ## Appending Variables to Strings
 
 Just as we can build a string over multiple lines out of string `literals`, we can also append variables to a string using the plus equals (`+=`) operator.
+
+> Practice
 
 ```js
 // Example
@@ -617,6 +645,8 @@ You can find the length of a `String` value by writing `.length` after the strin
 `"Alan Peter".length; // 10`
 
 For example, if we created a variable `var firstName = "Charles"`, we could find out how long the string `"Charles"` is by using the `firstName.length` property.
+
+> Practice
 
 ```js
 // Example
@@ -642,6 +672,8 @@ Most modern programming languages, like JavaScript, don't start counting at 1 li
 
 For example, the character at index 0 in the word "Charles" is "C". So if `var firstName = "Charles"`, you can get the value of the first letter of the string by using `firstName[0]`.
 
+> Practice
+
 ```js
 // Example
 var firstLetterOfFirstName = "";
@@ -663,6 +695,8 @@ In JavaScript, `String` values are `immutable`, which means that they cannot be 
 
 For example, the following code:
 
+> Practice
+
 ```js
 var myStr = "Bob";
 myStr[0] = "J";
@@ -674,6 +708,8 @@ cannot change the value of `myStr` to "Job", because the contents of `myStr` can
 var myStr = "Bob";
 myStr = "Job";
 ```
+
+> Practice
 
 ```js
 // Setup
@@ -689,6 +725,8 @@ myStr = "Hello World"; // Fix Me
 You can also use `bracket notation` to get the character at other positions within a string.
 
 Remember that computers start counting at `0`, so the first character is actually the zeroth character.
+
+> Practice
 
 ```js
 // Example
@@ -710,6 +748,8 @@ In order to get the last letter of a string, you can subtract one from the strin
 
 For example, if `var firstName = "Charles"`, you can get the value of the last letter of the string by using `firstName[firstName.length - 1]`.
 
+> Practice
+
 ```js
 // Example
 var firstName = "Ada";
@@ -729,6 +769,8 @@ var lastLetterOfLastName = lastName[lastName.length - 1];
 You can use the same principle we just used to retrieve the last character in a string to retrieve the Nth-to-last character.
 
 For example, you can get the value of the third-to-last letter of the `var firstName = "Charles"` string by using `firstName[firstName.length - 3]`
+
+> Practice
 
 ```js
 // Example
@@ -763,6 +805,8 @@ You will need to use the string concatenation operator `+` to build a new string
 
 You will also need to account for spaces in your string, so that the final sentence has spaces between all the words. The result should be a complete sentence.
 
+> Practice
+
 ```js
 function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
   var result = "";
@@ -785,6 +829,8 @@ You start an array declaration with an opening square bracket, end it with a clo
 
 `var sandwich = ["peanut butter", "jelly", "bread"].`
 
+> Practice
+
 ```js
 // Example
 var ourArray = ["John", 23];
@@ -796,6 +842,8 @@ var myArray = ["Artdvp", 25];
 ## Nest one Array within Another Array
 
 You can also nest arrays within other arrays, like this: `[["Bulls", 23], ["White Sox", 45]]`. This is also called a `Multi-dimensional Array`.
+
+> Practice
 
 ```js
 // Example
@@ -819,6 +867,8 @@ array[0]; // equals 1
 var data = array[1]; // equals 2
 ```
 
+> Practice
+
 ```js
 // Example
 var ourArray = [1, 2, 3];
@@ -841,6 +891,8 @@ Unlike strings, the entries of arrays are mutable and can be changed freely.
 var ourArray = [3, 2, 1];
 ourArray[0] = 1; // equals [1,2,1]
 ```
+
+> Practice
 
 ```js
 // Example
@@ -867,6 +919,8 @@ arr[3][0]; // equals [10,11,12]
 arr[3][0][1]; // equals 11
 ```
 
+> Practice
+
 ```js
 // Setup
 var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], 13, 14]];
@@ -887,6 +941,8 @@ var arr = [1, 2, 3];
 arr.push(4);
 // arr is now [1,2,3,4]
 ```
+
+> Practice
 
 ```js
 // Example
@@ -915,6 +971,8 @@ For example, for the code
 
 the variable `oneDown` now holds the value `6` and the array becomes `[1, 4]`.
 
+> Practice
+
 ```js
 // Example
 var ourArray = [1, 2, 3];
@@ -934,6 +992,8 @@ var removedFromMyArray = myArray.pop();
 `pop()` always removes the last element of an array. What if you want to remove the first?
 
 That's where `.shift(`) comes in. It works just like `.pop()`, except it removes the first element instead of the last.
+
+> Practice
 
 ```js
 // Example
@@ -981,6 +1041,8 @@ The first element in each sub-array should contain a string with the name of the
 
 There should be at least 5 sub-arrays in the list.
 
+> Practice
+
 ```js
 var myList = [];
 
@@ -1008,6 +1070,8 @@ You can call or `invoke` this function by using its name followed by parentheses
 `functionName();`
 
 Each time the function is called it will print out the message `"Hello World"` on the dev console. All of the code between the curly braces will be executed every time the function is called.
+
+> Practice
 
 ```js
 // Example
@@ -1043,6 +1107,8 @@ Then we can call `testFun`:
 
 We have passed two arguments, `"Hello"` and `"World"`. Inside the function, `param1` will equal "Hello" and `param2` will equal "World". Note that you could call `testFun` again with different arguments and the parameters would take on the value of the new arguments.
 
+> Practice
+
 ```js
 // Example
 function ourFunctionWithArgs(a, b) {
@@ -1064,6 +1130,8 @@ functionWithArgs(7, 9);
 In JavaScript, `scope` refers to the visibility of variables. Variables which are defined outside of a function block have `Global` scope. This means, they can be seen everywhere in your JavaScript code.
 
 Variables which are used without the `var` keyword are automatically created in the `global` scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with `var`.
+
+> Practice
 
 ```js
 // Declare your variable here
@@ -1107,6 +1175,8 @@ console.log(loc); // "undefined"
 
 `loc` is not defined outside of the function.
 
+> Practice
+
 ```js
 function myLocalScope() {
   "use strict";
@@ -1139,6 +1209,8 @@ function myFun() {
 
 The function `myFun` will return `"Head"` because the `local` version of the variable is present.
 
+> Practice
+
 ```js
 // Setup
 var outerWear = "T-Shirt";
@@ -1169,6 +1241,8 @@ var answer = plusThree(5); // 8
 
 `plusThree` takes an `argument` for `num` and returns a value equal to `num + 3`.
 
+> Practice
+
 ```js
 // Example
 function minusSeven(num) {
@@ -1194,6 +1268,8 @@ Assume we have pre-defined a function `sum` which adds two numbers together, the
 `ourSum = sum(5, 12);`
 
 will call `sum` function, which returns a value of `17` and assigns it to `ourSum` variable.
+
+> Practice
 
 ```js
 // Example
@@ -1222,6 +1298,8 @@ processed = processArg(7);
 In Computer Science a `queue` is an abstract `Data Structure` where items are kept in order. New items can be added at the back of the `queue` and old items are taken off from the front of the `queue`.
 
 Write a function `nextInLine` which takes an array (`arr`) and a number (`item`) as arguments. Add the number to the end of the array, then remove the first element of array. The `nextInLine` function should then return the element that was removed.
+
+> Practice
 
 ```js
 function nextInLine(arr, item) {
@@ -1252,6 +1330,8 @@ Another data type is the `Boolean`. `Booleans` may only be one of two values: `t
 **Note**
 
 `Boolean` values are never written with quotes. The `strings` "`true`" and "`false`" are not `Boolean` and have no special meaning in JavaScript.
+
+> Practice
 
 ```js
 function welcomeToBooleans() {
@@ -1293,6 +1373,8 @@ test(false); // returns "It was false"
 ```
 
 When `test` is called with a value of `true`, the `if` statement evaluates `myCondition` to see if it is `true` or not. Since it is `true`, the function returns "It was true". When we call `test` with a value of false, `myCondition` is not `true` and the statement in the curly braces is not executed and the function returns `"It was false"`.
+
+> Practice
 
 ```js
 // Example
@@ -1345,6 +1427,8 @@ In order for JavaScript to compare two different `data types` (for example, `num
 "3" == 3; // true
 ```
 
+> Practice
+
 ```js
 // Setup
 function testEqual(val) {
@@ -1371,6 +1455,8 @@ Strict equality `(===)` is the counterpart to the equality operator (`==`). Unli
 ```
 
 In the second example, `3` is a `Number` type and `'3'` is a `String` type.
+
+> Practice
 
 ```js
 // Setup
@@ -1401,6 +1487,8 @@ Examples
 0 != false; // false
 ```
 
+> Practice
+
 ```js
 // Setup
 function testNotEqual(val) {
@@ -1427,6 +1515,8 @@ The strict inequality operator (`!==`) is the opposite of the strict equality op
 3 !== "3"; // true
 4 !== 3; // true
 ```
+
+> Practice
 
 ```js
 // Setup
@@ -1460,6 +1550,8 @@ Like the equality operator, greater than operator will convert data types of val
 2 > 3; // false
 "1" > 9; // false
 ```
+
+> Practice
 
 ```js
 function testGreaterThan(val) {
@@ -1500,6 +1592,8 @@ Like the equality operator, `greater than or equal` to operator will convert dat
 "7" >= 9; // false
 ```
 
+> Practice
+
 ```js
 function testGreaterOrEqual(val) {
   if (val >= 20) {
@@ -1532,6 +1626,8 @@ The less than operator (<) compares the values of two numbers. If the number to 
 3 < 2; // false
 "8" < 4; // false
 ```
+
+> Practice
 
 ```js
 function testLessThan(val) {
@@ -1567,6 +1663,8 @@ Examples
 3 <= 2; // false
 "8" <= 4; // false
 ```
+
+> Practice
 
 ```js
 function testLessOrEqual(val) {
@@ -1611,6 +1709,8 @@ if (num > 5 && num < 10) {
 return "No";
 ```
 
+> Practice
+
 ```js
 function testLogicalAnd(val) {
   // Only change code below this line
@@ -1652,6 +1752,8 @@ if (num > 10 || num < 5) {
 return "Yes";
 ```
 
+> Practice
+
 ```js
 function testLogicalOr(val) {
   // Only change code below this line
@@ -1679,6 +1781,8 @@ if (num > 10) {
   return "10 or Less";
 }
 ```
+
+> Practice
 
 ```js
 function testElse(val) {
@@ -1712,6 +1816,8 @@ if (num > 15) {
   return "Between 5 and 15";
 }
 ```
+
+> Practice
 
 ```js
 function testElseIf(val) {
@@ -1752,6 +1858,8 @@ function foo(x) {
 
 And the second just switches the order of the statements:
 
+> Practice
+
 ```js
 function bar(x) {
   if (x < 2) {
@@ -1770,6 +1878,8 @@ While these two functions look nearly identical if we pass a number to both we g
 foo(0); // "Less than one"
 bar(0); // "Less than two"
 ```
+
+> Practice
 
 ```js
 function orderMyLogic(val) {
@@ -1803,6 +1913,8 @@ if (condition1) {
   statementN
 }
 ```
+
+> Practice
 
 ```js
 function testSize(num) {
@@ -1845,24 +1957,26 @@ Your function will be passed `par` and `strokes` arguments. Return the correct s
 
 `par` and `strokes` will always be numeric and positive.
 
+> Practice
+
 ```js
 function golfScore(par, strokes) {
   // Only change code below this line
-  if(strokes === 1){
+  if (strokes === 1) {
     return "Hole-in-one!";
-  } else if(strokes <= par -2 ) {
+  } else if (strokes <= par - 2) {
     return "Eagle";
-  } else if(strokes === par - 1) {
+  } else if (strokes === par - 1) {
     return "Birdie";
-  } else if(strokes === par) {
+  } else if (strokes === par) {
     return "Par";
-  } else if(strokes === par + 1){
+  } else if (strokes === par + 1) {
     return "Bogey";
-  } else if(strokes === par + 2) {
+  } else if (strokes === par + 2) {
     return "Double Bogey";
-  } else if(strokes >= par + 3) {
+  } else if (strokes >= par + 3) {
     return "Go Home!";
-  } 
+  }
   // Only change code above this line
 }
 
@@ -1894,6 +2008,8 @@ switch (num) {
 
 `case` values are tested with strict equality `(===).` The `break` tells JavaScript to stop executing statements. If the `break` is omitted, the next statement will be executed.
 
+> Practice
+
 ```js
 function caseInSwitch(val) {
   var answer = "";
@@ -1910,10 +2026,10 @@ function caseInSwitch(val) {
       break;
     case 4:
       answer = "delta";
-      break; 
+      break;
   }
-  // Only change code above this line  
-  return answer;  
+  // Only change code above this line
+  return answer;
 }
 
 // Change this value to test
@@ -1940,31 +2056,538 @@ switch (num) {
 }
 ```
 
+> Practice
+
 ```js
 function switchOfStuff(val) {
   var answer = "";
   // Only change code below this line
   switch (val) {
-    case 'a':
+    case "a":
       answer = "apple";
       break;
-    case 'b':
+    case "b":
       answer = "bird";
       break;
-    case 'c':
+    case "c":
       answer = "cat";
       break;
     default:
       answer = "stuff";
   }
-  
-  
-  // Only change code above this line  
-  return answer;  
+
+  // Only change code above this line
+  return answer;
 }
 
 // Change this value to test
 switchOfStuff(1);
 ```
 
-## 
+## Multiple Identical Options in Switch Statements
+
+If the `break` statement is omitted from a `switch` statement's `case`, the following `case` statement(s) are executed until a `break` is encountered. If you have multiple inputs with the same output, you can represent them in a `switch` statement like this:
+
+```js
+switch (val) {
+  case 1:
+  case 2:
+  case 3:
+    result = "1, 2, or 3";
+    break;
+  case 4:
+    result = "4 alone";
+}
+```
+
+Cases for 1, 2, and 3 will all produce the same result.
+
+> Practice
+
+```js
+function sequentialSizes(val) {
+  var answer = "";
+  // Only change code below this line
+  switch (val) {
+    case 1:
+    case 2:
+    case 3:
+      answer = "Low";
+      break;
+    case 4:
+    case 5:
+    case 6:
+      answer = "Mid";
+      break;
+    case 7:
+    case 8:
+    case 9:
+      answer = "High";
+      break;
+  }
+  // Only change code above this line
+  return answer;
+}
+
+// Change this value to test
+sequentialSizes(1);
+```
+
+## Replacing If Else Chains with Switch
+
+If you have many options to choose from, a `switch` statement can be easier to write than many chained `if/else if` statements. The following:
+
+```js
+if (val === 1) {
+  answer = "a";
+} else if (val === 2) {
+  answer = "b";
+} else {
+  answer = "c";
+}
+```
+
+can be replaced with:
+
+```js
+switch (val) {
+  case 1:
+    answer = "a";
+    break;
+  case 2:
+    answer = "b";
+    break;
+  default:
+    answer = "c";
+}
+```
+
+> Practice
+
+```js
+function chainToSwitch(val) {
+  var answer = "";
+  // Only change code below this line
+  switch (val) {
+    case "bob":
+      answer = "Marley";
+      break;
+    case 42:
+      answer = "The Answer";
+      break;
+    case 1:
+      answer = "There is no #1";
+      break;
+    case 99:
+      answer = "Missed me by this much!";
+      break;
+    case 7:
+      answer = "Ate Nine";
+      break;
+  }
+  // Only change code above this line
+  return answer;
+}
+
+// Change this value to test
+chainToSwitch(7);
+```
+
+## Returning Boolean Values from Functions
+
+You may recall from Comparison with the Equality Operator that all comparison operators return a boolean `true` or `false` value.
+
+A common `anti-pattern` is to use an `if/else` statement to do a comparison and then `return` `true/false`:
+
+```js
+function isEqual(a, b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+}
+```
+
+Since `===` returns `true` or `false`, we can return the result of the comparison:
+
+```js
+function isEqual(a, b) {
+  return a === b;
+}
+```
+
+> Practice
+
+```js
+function isLess(a, b) {
+  // Fix this code
+  return a < b;
+}
+
+// Change these values to test
+isLess(10, 15);
+// true
+```
+
+## Return Early Pattern for Functions
+
+When a `return` statement is reached, the execution of the current function stops and control returns to the calling location.
+
+**Example**
+
+```js
+function myFun() {
+  console.log("Hello");
+  return "World";
+  console.log("byebye");
+}
+myFun();
+```
+
+The above outputs "Hello" to the console, returns "World", but `"byebye"` is never output, because the function exits at the `return` statement.
+
+> Practice
+
+```js
+// Setup
+function abTest(a, b) {
+  // Only change code below this line
+  if (a < 0 || b < 0) {
+    return;
+  }
+  // Only change code above this line
+
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+// Change values below to test your code
+abTest(2, 2);
+// 8
+abTest(-2, 2);
+// undefined
+```
+
+## Counting Cards
+
+In the casino game Blackjack, a player can gain an advantage over the house by keeping track of the relative number of high and low cards remaining in the deck. This is called [Card Counting](https://en.wikipedia.org/wiki/Card_counting).
+
+Having more high cards remaining in the deck favors the player. Each card is assigned a value according to the table below. When the count is positive, the player should bet high. When the count is zero or negative, the player should bet low.
+
+| Count Change | Cards                  |
+| ------------ | ---------------------- |
+| +1           | 2, 3, 4, 5, 6          |
+| 0            | 7, 8, 9                |
+| -1           | 10, 'J', 'Q', 'K', 'A' |
+
+You will write a `card` counting function. It will receive a card parameter and increment or decrement the global `count` variable according to the card's value (see table). The function will then return a string with the current count and the string `"Bet"` if the count is positive, or `"Hold"` if the count is zero or negative. The current count and the player's decision (`"Bet"` or `"Hold"`) should be separated by a single space.
+
+**Example Output**
+
+`"-3 Hold"`
+`"5 Bet"`
+
+> Practice
+
+```js
+var count = 0;
+
+function cc(card) {
+  // Only change code below this line
+  switch (card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count += 1;
+      break;
+    case 7:
+    case 8:
+    case 9:
+      count += 0;
+      break;
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      count -= 1;
+      break;
+  }
+
+  if (count <= 0) {
+    return count + " Hold";
+  } else {
+    return count + " Bet";
+  }
+  // Only change code above this line
+}
+
+// Add/remove calls to test your function.
+// Note: Only the last will display
+cc(2);
+cc(3);
+cc(7);
+cc("K");
+cc("A");
+```
+
+## Build JavaScript Objects
+
+You may have heard the term `object` before.
+
+Objects are similar to `arrays`, except that instead of using indexes to access and modify their data, you access the data in objects through what are called `properties`.
+
+Here's a sample object:
+
+```js
+var cat = {
+  name: "Whiskers",
+  legs: 4,
+  tails: 1,
+  enemies: ["Water", "Dogs"]
+};
+```
+
+Objects are useful for storing data in a structured way, and can represent real world objects, like a cat.
+
+> Practice
+
+```js
+// Example
+var ourDog = {
+  name: "Camper",
+  legs: 4,
+  tails: 1,
+  friends: ["everything!"]
+};
+
+// Only change code below this line.
+
+var myDog = {
+  name: "Cownom",
+  legs: 4,
+  tails: 1,
+  friends: ["pukkard"]
+};
+```
+
+## Accessing Objects Properties with the Dot Operator
+
+There are two ways to access the properties of an object: the dot operator (`.`) and bracket notation (`[]`), similar to an array.
+
+The dot operator is what you use when you know the name of the property you're trying to access ahead of time.
+
+Here is a sample of using the dot operator (.) to read an object property:
+
+```js
+var myObj = {
+  prop1: "val1",
+  prop2: "val2"
+};
+var prop1val = myObj.prop1; // val1
+var prop2val = myObj.prop2; // val2
+```
+
+> Practice
+
+```js
+// Setup
+var testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+// Only change code below this line
+
+var hatValue = testObj.hat;      // Change this line
+var shirtValue = testObj.shirt;    // Change this line
+```
+
+## Accessing Objects Properties with Bracket Notation
+
+The second way to access the properties of an object is bracket notation (`[]`). If the property of the object you are trying to access has a space in it, you will need to use bracket notation.
+
+Here is a sample of using bracket notation to read an object property:
+
+```js
+var myObj = {
+  "Space Name": "Kirk",
+  "More Space": "Spock"
+};
+myObj["Space Name"]; // Kirk
+myObj['More Space']; // Spock
+```
+
+Note that property names with spaces in them must be in quotes (single or double).
+
+```js
+// Setup
+var testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+
+// Only change code below this line
+
+var entreeValue = testObj["an entree"];   // Change this line
+var drinkValue = testObj["the drink"];    // Change this line
+```
+
+## Accessing Objects Properties with Variables
+
+Another use of bracket notation on objects is to use a variable to access a property. This can be very useful for iterating through lists of the object properties or for doing the lookup.
+
+Here is an example of using a variable to access a property:
+
+```js
+var someProp = "propName";
+var myObj = {
+  propName: "Some Value"
+}
+myObj[someProp]; // "Some Value"
+```
+Here is one more:
+
+```js
+var myDog = "Hunter";
+var dogs = {
+  Fido: "Mutt",
+  Hunter: "Doberman",
+  Snoopie: "Beagle"
+}
+```
+var breed = dogs[myDog];
+console.log(breed);// "Doberman"
+Note that we do not use quotes around the variable name when using it to access the property because we are using the value of the variable, not the name
+
+```js
+// Setup
+var testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+
+// Only change code below this line;
+
+var playerNumber = 16;       // Change this Line
+var player = testObj[playerNumber];   // Change this Line
+```
+
+## Updating Object Properties
+
+After you've created a JavaScript object, you can update its properties at any time just like you would update any other variable. You can use either dot or bracket notation to update.
+
+For example, let's look at `ourDog`:
+
+```js
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+```
+
+Since he's a particularly happy dog, let's change his name to "Happy Camper". Here's how we update his object's name property:
+
+`ourDog.name = "Happy Camper";` or
+
+`ourDog["name"] = "Happy Camper";`
+
+Now when we evaluate `ourDog.name`, instead of getting "Camper", we'll get his new name, "Happy Camper".
+
+```js
+// Example
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+ourDog.name = "Happy Camper";
+
+// Setup
+var myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["Free Code Camp Campers"]
+};
+
+// Only change code below this line.
+myDog.name = "Happy Coder";
+```
+
+## Add New Properties to a JavaScript Object
+
+You can add new properties to existing JavaScript objects the same way you would modify them.
+
+Here's how we would add a `"bark"` property to `ourDog`:
+
+`ourDog.bark = "bow-wow";`
+
+or
+
+`ourDog["bark"] = "bow-wow";`
+
+Now when we evaluate `ourDog.bark`, we'll get his bark, "bow-wow".
+
+```js
+// Example
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+ourDog.bark = "bow-wow";
+
+// Setup
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["Free Code Camp Campers"]
+};
+
+// Only change code below this line.
+myDog.bark = "woof";
+```
+
+## Delete Properties from a JavaScript Object
+
+We can also delete properties from objects like this:
+
+`delete ourDog.bark;`
+
+```js
+// Example
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"],
+  "bark": "bow-wow"
+};
+
+delete ourDog.bark;
+
+// Setup
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["Free Code Camp Campers"],
+  "bark": "woof"
+};
+
+// Only change code below this line.
+delete myDog.tails;
+```
