@@ -11,6 +11,7 @@ I learn stuff
 - [landing-bootstrap](https://github.com/artdvp/landing-bootstrap) - Bootstrap
 - [typescript-101](https://github.com/artdvp/typescript-101) - TypeScript
 - [webpack2-workshop](https://github.com/artdvp/webpack2-workshop) - Webpack2
+- [vue.js egghead](https://gist.github.com/artdvp/f2c388d43f7ecaec448ac5daea1dbbbf) - Vue.js
 
 > Incomplete
 
