@@ -2591,3 +2591,197 @@ var myDog = {
 // Only change code below this line.
 delete myDog.tails;
 ```
+
+## Using Objects for Lookups
+
+Objects can be thought of as a key/value storage, like a dictionary. If you have tabular data, you can use an object to "lookup" values rather than a `switch` statement or an `if/else` chain. This is most useful when you know that your input data is limited to a certain range.
+
+Here is an example of a simple reverse alphabet lookup:
+
+```js
+var alpha = {
+  1:"Z",
+  2:"Y",
+  3:"X",
+  4:"W",
+  ...
+  24:"C",
+  25:"B",
+  26:"A"
+};
+alpha[2]; // "Y"
+alpha[24]; // "C"
+
+var value = 2;
+alpha[value]; // "Y"
+```
+
+```js
+// Setup
+function phoneticLookup(val) {
+  var result = "";
+
+  // Only change code below this line
+  result = {
+    "alpha": "Adams",
+    "bravo": "Boston",
+    "charlie": "Chicago",
+    "delta": "Denver",
+    "echo": "Easy",
+    "foxtrot": "Frank"
+  };
+  // Only change code above this line
+  return result[val];
+}
+
+// Change this value to test
+phoneticLookup("charlie");
+// Chicago
+```
+
+## Testing Objects for Properties
+
+Sometimes it is useful to check if the property of a given object exists or not. We can use the `.hasOwnProperty(propname)` method of objects to determine if that object has the given property name. `.hasOwnProperty()` returns `true` or `false` if the property is found or not.
+
+**Example**
+
+```js
+var myObj = {
+  top: "hat",
+  bottom: "pants"
+};
+myObj.hasOwnProperty("top");    // true
+myObj.hasOwnProperty("middle"); // false
+```
+
+```js
+// Setup
+var myObj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
+
+function checkObj(checkProp) {
+  // Your Code Here
+  if(myObj.hasOwnProperty(checkProp)) {
+    return myObj[checkProp];
+  } else {
+    return "Not Found";
+  }
+}
+
+// Test your code by modifying these values
+checkObj("gift");
+```
+
+## Manipulating Complex Objects
+
+Sometimes you may want to store data in a flexible `Data Structure.` A JavaScript object is one way to handle flexible data. They allow for arbitrary combinations of `strings`, `numbers`, `booleans`, `arrays`, `functions`, and `objects`.
+
+Here's an example of a complex data structure:
+
+```js
+var ourMusic = [
+  {
+    "artist": "Daft Punk",
+    "title": "Homework",
+    "release_year": 1997,
+    "formats": [ 
+      "CD", 
+      "Cassette", 
+      "LP" ],
+    "gold": true
+  }
+];
+```
+This is an array which contains one object inside. The object has various pieces of `metadata` about an album. It also has a nested `"formats"` array. If you want to add more album records, you can do this by adding records to the top level array.
+
+Objects hold data in a property, which has a key-value format. In the example above, `"artist"`: `"Daft Punk"` is a property that has a key of `"artist"` and a value of `"Daft Punk"`.
+
+JavaScript Object Notation or `JSON` is a related data interchange format used to store data.
+
+```js
+{
+  "artist": "Daft Punk",
+  "title": "Homework",
+  "release_year": 1997,
+  "formats": [ 
+    "CD",
+    "Cassette",
+    "LP"
+  ],
+  "gold": true
+}
+```
+**Note**
+
+You will need to place a comma after every object in the array, unless it is the last object in the array.
+
+```js
+var myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [ 
+      "CS", 
+      "8T", 
+      "LP" ],
+    "gold": true
+  },
+  {
+    "artist": "Rita Ora",
+    "title": "Anywhere",
+    "release_year": 2018,
+    "formats": [
+      "MP4",
+      "wav"
+    ],
+    "gold": false
+  }
+  // Add record here
+];
+```
+
+## Accessing Nested Objects
+
+The sub-properties of objects can be accessed by chaining together the dot or bracket notation.
+
+Here is a nested object:
+
+```js
+var ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": { 
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
+ourStorage.cabinet["top drawer"].folder2;  // "secrets"
+ourStorage.desk.drawer; // "stapler"
+```
+
+```js
+// Setup
+var myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+// Only change code below this line
+
+var gloveBoxContents = myStorage.car.inside["glove box"]; // Change this line
+```
