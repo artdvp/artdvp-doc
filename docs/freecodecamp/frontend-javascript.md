@@ -2395,15 +2395,15 @@ var prop2val = myObj.prop2; // val2
 ```js
 // Setup
 var testObj = {
-  "hat": "ballcap",
-  "shirt": "jersey",
-  "shoes": "cleats"
+  hat: "ballcap",
+  shirt: "jersey",
+  shoes: "cleats"
 };
 
 // Only change code below this line
 
-var hatValue = testObj.hat;      // Change this line
-var shirtValue = testObj.shirt;    // Change this line
+var hatValue = testObj.hat; // Change this line
+var shirtValue = testObj.shirt; // Change this line
 ```
 
 ## Accessing Objects Properties with Bracket Notation
@@ -2418,7 +2418,7 @@ var myObj = {
   "More Space": "Spock"
 };
 myObj["Space Name"]; // Kirk
-myObj['More Space']; // Spock
+myObj["More Space"]; // Spock
 ```
 
 Note that property names with spaces in them must be in quotes (single or double).
@@ -2433,8 +2433,8 @@ var testObj = {
 
 // Only change code below this line
 
-var entreeValue = testObj["an entree"];   // Change this line
-var drinkValue = testObj["the drink"];    // Change this line
+var entreeValue = testObj["an entree"]; // Change this line
+var drinkValue = testObj["the drink"]; // Change this line
 ```
 
 ## Accessing Objects Properties with Variables
@@ -2447,9 +2447,10 @@ Here is an example of using a variable to access a property:
 var someProp = "propName";
 var myObj = {
   propName: "Some Value"
-}
+};
 myObj[someProp]; // "Some Value"
 ```
+
 Here is one more:
 
 ```js
@@ -2458,8 +2459,9 @@ var dogs = {
   Fido: "Mutt",
   Hunter: "Doberman",
   Snoopie: "Beagle"
-}
+};
 ```
+
 var breed = dogs[myDog];
 console.log(breed);// "Doberman"
 Note that we do not use quotes around the variable name when using it to access the property because we are using the value of the variable, not the name
@@ -2474,8 +2476,8 @@ var testObj = {
 
 // Only change code below this line;
 
-var playerNumber = 16;       // Change this Line
-var player = testObj[playerNumber];   // Change this Line
+var playerNumber = 16; // Change this Line
+var player = testObj[playerNumber]; // Change this Line
 ```
 
 ## Updating Object Properties
@@ -2486,10 +2488,10 @@ For example, let's look at `ourDog`:
 
 ```js
 var ourDog = {
-  "name": "Camper",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["everything!"]
+  name: "Camper",
+  legs: 4,
+  tails: 1,
+  friends: ["everything!"]
 };
 ```
 
@@ -2504,20 +2506,20 @@ Now when we evaluate `ourDog.name`, instead of getting "Camper", we'll get his n
 ```js
 // Example
 var ourDog = {
-  "name": "Camper",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["everything!"]
+  name: "Camper",
+  legs: 4,
+  tails: 1,
+  friends: ["everything!"]
 };
 
 ourDog.name = "Happy Camper";
 
 // Setup
 var myDog = {
-  "name": "Coder",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["Free Code Camp Campers"]
+  name: "Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["Free Code Camp Campers"]
 };
 
 // Only change code below this line.
@@ -2541,20 +2543,20 @@ Now when we evaluate `ourDog.bark`, we'll get his bark, "bow-wow".
 ```js
 // Example
 var ourDog = {
-  "name": "Camper",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["everything!"]
+  name: "Camper",
+  legs: 4,
+  tails: 1,
+  friends: ["everything!"]
 };
 
 ourDog.bark = "bow-wow";
 
 // Setup
 var myDog = {
-  "name": "Happy Coder",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["Free Code Camp Campers"]
+  name: "Happy Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["Free Code Camp Campers"]
 };
 
 // Only change code below this line.
@@ -2570,22 +2572,22 @@ We can also delete properties from objects like this:
 ```js
 // Example
 var ourDog = {
-  "name": "Camper",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["everything!"],
-  "bark": "bow-wow"
+  name: "Camper",
+  legs: 4,
+  tails: 1,
+  friends: ["everything!"],
+  bark: "bow-wow"
 };
 
 delete ourDog.bark;
 
 // Setup
 var myDog = {
-  "name": "Happy Coder",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["Free Code Camp Campers"],
-  "bark": "woof"
+  name: "Happy Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["Free Code Camp Campers"],
+  bark: "woof"
 };
 
 // Only change code below this line.
@@ -2623,12 +2625,12 @@ function phoneticLookup(val) {
 
   // Only change code below this line
   result = {
-    "alpha": "Adams",
-    "bravo": "Boston",
-    "charlie": "Chicago",
-    "delta": "Denver",
-    "echo": "Easy",
-    "foxtrot": "Frank"
+    alpha: "Adams",
+    bravo: "Boston",
+    charlie: "Chicago",
+    delta: "Denver",
+    echo: "Easy",
+    foxtrot: "Frank"
   };
   // Only change code above this line
   return result[val];
@@ -2650,7 +2652,7 @@ var myObj = {
   top: "hat",
   bottom: "pants"
 };
-myObj.hasOwnProperty("top");    // true
+myObj.hasOwnProperty("top"); // true
 myObj.hasOwnProperty("middle"); // false
 ```
 
@@ -2664,7 +2666,7 @@ var myObj = {
 
 function checkObj(checkProp) {
   // Your Code Here
-  if(myObj.hasOwnProperty(checkProp)) {
+  if (myObj.hasOwnProperty(checkProp)) {
     return myObj[checkProp];
   } else {
     return "Not Found";
@@ -2684,17 +2686,15 @@ Here's an example of a complex data structure:
 ```js
 var ourMusic = [
   {
-    "artist": "Daft Punk",
-    "title": "Homework",
-    "release_year": 1997,
-    "formats": [ 
-      "CD", 
-      "Cassette", 
-      "LP" ],
-    "gold": true
+    artist: "Daft Punk",
+    title: "Homework",
+    release_year: 1997,
+    formats: ["CD", "Cassette", "LP"],
+    gold: true
   }
 ];
 ```
+
 This is an array which contains one object inside. The object has various pieces of `metadata` about an album. It also has a nested `"formats"` array. If you want to add more album records, you can do this by adding records to the top level array.
 
 Objects hold data in a property, which has a key-value format. In the example above, `"artist"`: `"Daft Punk"` is a property that has a key of `"artist"` and a value of `"Daft Punk"`.
@@ -2706,7 +2706,7 @@ JavaScript Object Notation or `JSON` is a related data interchange format used t
   "artist": "Daft Punk",
   "title": "Homework",
   "release_year": 1997,
-  "formats": [ 
+  "formats": [
     "CD",
     "Cassette",
     "LP"
@@ -2714,6 +2714,7 @@ JavaScript Object Notation or `JSON` is a related data interchange format used t
   "gold": true
 }
 ```
+
 **Note**
 
 You will need to place a comma after every object in the array, unless it is the last object in the array.
@@ -2721,24 +2722,18 @@ You will need to place a comma after every object in the array, unless it is the
 ```js
 var myMusic = [
   {
-    "artist": "Billy Joel",
-    "title": "Piano Man",
-    "release_year": 1973,
-    "formats": [ 
-      "CS", 
-      "8T", 
-      "LP" ],
-    "gold": true
+    artist: "Billy Joel",
+    title: "Piano Man",
+    release_year: 1973,
+    formats: ["CS", "8T", "LP"],
+    gold: true
   },
   {
-    "artist": "Rita Ora",
-    "title": "Anywhere",
-    "release_year": 2018,
-    "formats": [
-      "MP4",
-      "wav"
-    ],
-    "gold": false
+    artist: "Rita Ora",
+    title: "Anywhere",
+    release_year: 2018,
+    formats: ["MP4", "wav"],
+    gold: false
   }
   // Add record here
 ];
@@ -2752,31 +2747,31 @@ Here is a nested object:
 
 ```js
 var ourStorage = {
-  "desk": {
-    "drawer": "stapler"
+  desk: {
+    drawer: "stapler"
   },
-  "cabinet": {
-    "top drawer": { 
-      "folder1": "a file",
-      "folder2": "secrets"
+  cabinet: {
+    "top drawer": {
+      folder1: "a file",
+      folder2: "secrets"
     },
     "bottom drawer": "soda"
   }
 };
-ourStorage.cabinet["top drawer"].folder2;  // "secrets"
+ourStorage.cabinet["top drawer"].folder2; // "secrets"
 ourStorage.desk.drawer; // "stapler"
 ```
 
 ```js
 // Setup
 var myStorage = {
-  "car": {
-    "inside": {
+  car: {
+    inside: {
       "glove box": "maps",
       "passenger seat": "crumbs"
-     },
-    "outside": {
-      "trunk": "jack"
+    },
+    outside: {
+      trunk: "jack"
     }
   }
 };
@@ -2784,4 +2779,272 @@ var myStorage = {
 // Only change code below this line
 
 var gloveBoxContents = myStorage.car.inside["glove box"]; // Change this line
+```
+
+## Accessing Nested Arrays
+
+As we have seen in earlier examples, objects can contain both nested objects and nested arrays. Similar to accessing nested objects, Array bracket notation can be chained to access nested arrays.
+
+Here is an example of how to access a nested array:
+
+```js
+var ourPets = [
+  {
+    animalType: "cat",
+    names: ["Meowzer", "Fluffy", "Kit-Cat"]
+  },
+  {
+    animalType: "dog",
+    names: ["Spot", "Bowser", "Frankie"]
+  }
+];
+ourPets[0].names[1]; // "Fluffy"
+ourPets[1].names[0]; // "Spot"
+```
+
+```js
+// Setup
+var myPlants = [
+  {
+    type: "flowers",
+    list: ["rose", "tulip", "dandelion"]
+  },
+  {
+    type: "trees",
+    list: ["fir", "pine", "birch"]
+  }
+];
+
+// Only change code below this line
+
+var secondTree = myPlants[1].list[1]; // Change this line
+// pine
+```
+
+## Iterate with JavaScript For Loops
+
+You can run the same code multiple times by using a loop.
+
+The most common type of JavaScript loop is called a `"for loop"` because it runs "for" a specific number of times.
+
+For loops are declared with three optional expressions separated by semicolons:
+
+`for ([initialization]; [condition]; [final-expression])`
+
+The `initialization` statement is executed one time only before the loop starts. It is typically used to define and setup your loop variable.
+
+The `condition` statement is evaluated at the beginning of every loop iteration and will continue as long as it evaluates to `true`. When `condition` is `false` at the start of the iteration, the loop will stop executing. This means if `condition` starts as `false`, your loop will never execute.
+
+The `final-expression` is executed at the end of each loop iteration, prior to the next `condition` check and is usually used to increment or decrement your loop counter.
+
+In the following example we initialize with `i = 0` and iterate while our condition `i < 5` is true. We'll increment `i` by `1` in each loop iteration with i++ as our `final-expression.`
+
+```js
+var ourArray = [];
+for (var i = 0; i < 5; i++) {
+  ourArray.push(i);
+}
+```
+
+`ourArray` will now contain `[0,1,2,3,4]`.
+
+```js
+// Example
+var ourArray = [];
+
+for (var i = 0; i < 5; i++) {
+  ourArray.push(i);
+}
+
+// Setup
+var myArray = [];
+
+for (var i = 1 ; i < 6; i++) {
+  myArray.push(i);     
+}
+// Only change code below this line.
+// [1,2,3,4,5]
+```
+
+## Iterate Odd Numbers With a For Loop
+
+For loops don't have to iterate one at a time. By changing our `final-expression`, we can count by even numbers.
+
+We'll start at `i = 0` and loop while `i < 10`. We'll increment `i` by 2 each loop with `i += 2.`
+
+```js
+var ourArray = [];
+for (var i = 0; i < 10; i += 2) {
+  ourArray.push(i);
+}
+```
+`ourArray` will now contain `[0,2,4,6,8].`
+
+Let's change our `initialization` so we can count by odd numbers.
+
+```js
+// Example
+var ourArray = [];
+
+for (var i = 0; i < 10; i += 2) {
+  ourArray.push(i);
+}
+
+// Setup
+var myArray = [];
+
+for (var i = 1; i < 10; i += 2) {
+  myArray.push(i);
+}
+// Only change code below this line.
+// [1,3,5,7,9]
+```
+
+## Count Backwards With a For Loop
+
+ for loop can also count backwards, so long as we can define the right conditions.
+
+In order to count backwards by twos, we'll need to change our initialization, condition, and final-expression.
+
+We'll start at i = 10 and loop while i > 0. We'll decrement i by 2 each loop with i -= 2.
+
+```js
+var ourArray = [];
+for (var i=10; i > 0; i-=2) {
+  ourArray.push(i);
+}
+```
+`ourArray` will now contain `[10,8,6,4,2]`.
+
+Let's change our initialization and final-expression so we can count backward by twos by odd numbers.
+
+```js
+// Example
+var ourArray = [];
+
+for (var i = 10; i > 0; i -= 2) {
+  ourArray.push(i);
+}
+
+// Setup
+var myArray = [];
+
+// Only change code below this line.
+for(var i = 9; i > 0; i -= 2) {
+  myArray.push(i);
+}
+```
+
+## Iterate Through an Array with a For Loop
+
+A common task in JavaScript is to iterate through the contents of an array. One way to do that is with a `for` loop. This code will output each element of the array `arr` to the console:
+
+```js
+var arr = [10,9,8,7,6];
+for (var i=0; i < arr.length; i++) {
+   console.log(arr[i]);
+}
+```
+
+Remember that Arrays have zero-based numbering, which means the last index of the array is length - 1. Our `condition` for this loop is `i < arr.length`, which stops when `i` is at length - 1.
+
+```js
+// Example
+var ourArr = [ 9, 10, 11, 12];
+var ourTotal = 0;
+
+for (var i = 0; i < ourArr.length; i++) {
+  ourTotal += ourArr[i];
+}
+
+// Setup
+var myArr = [ 2, 3, 4, 5, 6];
+var total = 0;
+// Only change code below this line
+for (var i = 0; i < myArr.length; i++) {
+  total += myArr[i];
+}
+```
+
+## Nesting For Loops
+
+If you have a multi-dimensional array, you can use the same logic as the prior waypoint to loop through both the array and any sub-arrays. Here is an example:
+
+```js
+var arr = [
+  [1,2], [3,4], [5,6]
+];
+for (var i=0; i < arr.length; i++) {
+  for (var j=0; j < arr[i].length; j++) {
+    console.log(arr[i][j]);
+  }
+}
+```
+
+This outputs each sub-element in arr one at a time. Note that for the inner loop, we are checking the `.length` of `arr[i]`, since `arr[i]` is itself an array.
+
+```js
+function multiplyAll(arr) {
+  var product = 1;
+  // Only change code below this line
+  for(var i = 0; i < arr.length; i++ ){
+    for(var j = 0; j < arr[i].length; j++) {
+      product *= arr[i][j];
+    }
+  }
+  // Only change code above this line
+  return product;
+}
+
+// Modify values below to test your code
+multiplyAll([[1,2],[3,4],[5,6,7]]);
+// 5040
+```
+
+## Iterate with JavaScript While Loops
+
+You can run the same code multiple times by using a loop.
+
+Another type of JavaScript loop is called a `"while loop"`, because it runs "while" a specified condition is true and stops once that condition is no longer true.
+
+```js
+var ourArray = [];
+var i = 0;
+while(i < 5) {
+  ourArray.push(i);
+  i++;
+}
+```
+
+Let's try getting a while loop to work by pushing values to an array.
+
+```js
+// Setup
+var myArray = [];
+
+// Only change code below this line.
+var i = 0;
+while(i < 5) {
+  myArray.push(i);
+  i++;
+}
+// [0,1,2,3,4]
+```
+
+## Profile Lookup
+
+We have an array of objects representing different people in our contacts lists.
+
+A `lookUpProfile` function that takes `firstName` and a property (`prop`) as arguments has been pre-written for you.
+
+The function should check if `firstName` is an actual contact's `firstName` and the given property (`prop`) is a property of that contact.
+
+If both are true, then return the "value" of that property.
+
+If `firstName` does not correspond to any contacts then return `"No such contact"`
+
+If `prop` does not correspond to any valid properties then return `"No such property"`
+
+```js
+
 ```
