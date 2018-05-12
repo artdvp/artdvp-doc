@@ -8,17 +8,20 @@ sidebar: false
 
 * [Learning List collection by Artdvp](https://airtable.com/shrqhEwLasr49o1iF)
 
+## Now Learning
+
+* [FreeCodeCamp](../freecodecamp/)
+
 ## Index Group
 
 * [Basic Foundation](../foundation/)
 * [Command Line](../commandline/)
 * [Docker](../docker/)
-* [FreeCodeCamp](../freecodecamp/)
 * [Git](../git/)
-* [Gitmd](../gitmd/)
 * [GraphQL](../graphql/)
 * [JavaScript](../javascript/)
 
 ## Collection
 
 * [Site Pin](../sitepin/)
+* [Gitmd](../gitmd/)
