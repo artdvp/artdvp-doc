@@ -2422,7 +2422,7 @@ myObj["More Space"]; // Spock
 ```
 
 Note that property names with spaces in them must be in quotes (single or double).
-
+> Practice
 ```js
 // Setup
 var testObj = {
@@ -2452,7 +2452,7 @@ myObj[someProp]; // "Some Value"
 ```
 
 Here is one more:
-
+> Practice
 ```js
 var myDog = "Hunter";
 var dogs = {
@@ -2465,7 +2465,7 @@ var dogs = {
 var breed = dogs[myDog];
 console.log(breed);// "Doberman"
 Note that we do not use quotes around the variable name when using it to access the property because we are using the value of the variable, not the name
-
+> Practice
 ```js
 // Setup
 var testObj = {
@@ -2502,7 +2502,7 @@ Since he's a particularly happy dog, let's change his name to "Happy Camper". He
 `ourDog["name"] = "Happy Camper";`
 
 Now when we evaluate `ourDog.name`, instead of getting "Camper", we'll get his new name, "Happy Camper".
-
+> Practice
 ```js
 // Example
 var ourDog = {
@@ -2539,7 +2539,7 @@ or
 `ourDog["bark"] = "bow-wow";`
 
 Now when we evaluate `ourDog.bark`, we'll get his bark, "bow-wow".
-
+> Practice
 ```js
 // Example
 var ourDog = {
@@ -2568,7 +2568,7 @@ myDog.bark = "woof";
 We can also delete properties from objects like this:
 
 `delete ourDog.bark;`
-
+> Practice
 ```js
 // Example
 var ourDog = {
@@ -2617,7 +2617,7 @@ alpha[24]; // "C"
 var value = 2;
 alpha[value]; // "Y"
 ```
-
+> Practice
 ```js
 // Setup
 function phoneticLookup(val) {
@@ -2655,7 +2655,7 @@ var myObj = {
 myObj.hasOwnProperty("top"); // true
 myObj.hasOwnProperty("middle"); // false
 ```
-
+> Practice
 ```js
 // Setup
 var myObj = {
@@ -2682,7 +2682,7 @@ checkObj("gift");
 Sometimes you may want to store data in a flexible `Data Structure.` A JavaScript object is one way to handle flexible data. They allow for arbitrary combinations of `strings`, `numbers`, `booleans`, `arrays`, `functions`, and `objects`.
 
 Here's an example of a complex data structure:
-
+> Practice
 ```js
 var ourMusic = [
   {
@@ -2718,7 +2718,7 @@ JavaScript Object Notation or `JSON` is a related data interchange format used t
 **Note**
 
 You will need to place a comma after every object in the array, unless it is the last object in the array.
-
+> Practice
 ```js
 var myMusic = [
   {
@@ -2761,7 +2761,7 @@ var ourStorage = {
 ourStorage.cabinet["top drawer"].folder2; // "secrets"
 ourStorage.desk.drawer; // "stapler"
 ```
-
+> Practice
 ```js
 // Setup
 var myStorage = {
@@ -2801,7 +2801,7 @@ var ourPets = [
 ourPets[0].names[1]; // "Fluffy"
 ourPets[1].names[0]; // "Spot"
 ```
-
+> Practice
 ```js
 // Setup
 var myPlants = [
@@ -2847,7 +2847,7 @@ for (var i = 0; i < 5; i++) {
 ```
 
 `ourArray` will now contain `[0,1,2,3,4]`.
-
+> Practice
 ```js
 // Example
 var ourArray = [];
@@ -2881,7 +2881,7 @@ for (var i = 0; i < 10; i += 2) {
 `ourArray` will now contain `[0,2,4,6,8].`
 
 Let's change our `initialization` so we can count by odd numbers.
-
+> Practice
 ```js
 // Example
 var ourArray = [];
@@ -2917,7 +2917,7 @@ for (var i=10; i > 0; i-=2) {
 `ourArray` will now contain `[10,8,6,4,2]`.
 
 Let's change our initialization and final-expression so we can count backward by twos by odd numbers.
-
+> Practice
 ```js
 // Example
 var ourArray = [];
@@ -2938,7 +2938,7 @@ for(var i = 9; i > 0; i -= 2) {
 ## Iterate Through an Array with a For Loop
 
 A common task in JavaScript is to iterate through the contents of an array. One way to do that is with a `for` loop. This code will output each element of the array `arr` to the console:
-
+> Practice
 ```js
 var arr = [10,9,8,7,6];
 for (var i=0; i < arr.length; i++) {
@@ -2947,7 +2947,7 @@ for (var i=0; i < arr.length; i++) {
 ```
 
 Remember that Arrays have zero-based numbering, which means the last index of the array is length - 1. Our `condition` for this loop is `i < arr.length`, which stops when `i` is at length - 1.
-
+> Practice
 ```js
 // Example
 var ourArr = [ 9, 10, 11, 12];
@@ -2982,7 +2982,7 @@ for (var i=0; i < arr.length; i++) {
 ```
 
 This outputs each sub-element in arr one at a time. Note that for the inner loop, we are checking the `.length` of `arr[i]`, since `arr[i]` is itself an array.
-
+> Practice
 ```js
 function multiplyAll(arr) {
   var product = 1;
@@ -3017,7 +3017,7 @@ while(i < 5) {
 ```
 
 Let's try getting a while loop to work by pushing values to an array.
-
+> Practice
 ```js
 // Setup
 var myArray = [];
@@ -3044,7 +3044,7 @@ If both are true, then return the "value" of that property.
 If `firstName` does not correspond to any contacts then return `"No such contact"`
 
 If `prop` does not correspond to any valid properties then return `"No such property"`
-
+> Practice
 ```js
 //Setup
 var contacts = [
@@ -3103,7 +3103,7 @@ JavaScript has a `Math.random()` function that generates a random decimal number
 **Note**
 
 Like Storing Values with the Equal Operator, all function calls will be resolved before the `return` executes, so we can `return` the value of the `Math.random()` function.
-
+> Practice
 ```js
 function randomFraction() {
   // Only change code below this line.
@@ -3127,7 +3127,7 @@ Putting everything together, this is what our code looks like:
 `Math.floor(Math.random() * 20);`
 
 We are calling `Math.random()`, multiplying the result by 20, then passing the value to `Math.floor()` function to round the value down to the nearest whole number.
-
+> Practice
 ```js
 var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
 
@@ -3138,3 +3138,146 @@ function randomWholeNum() {
   return Math.floor(Math.random() * 10);
 }
 ```
+
+## Generate Random Whole Numbers within a Range
+
+Instead of generating a random number between zero and a given number like we did before, we can generate a random number that falls within a range of two specific numbers.
+
+To do this, we'll define a minimum number `min` and a maximum number `max`.
+
+Here's the formula we'll use. Take a moment to read it and try to understand what this code is doing:
+
+`Math.floor(Math.random() * (max - min + 1)) + min`
+> Practice
+```js
+// Example
+function ourRandomRange(ourMin, ourMax) {
+
+  return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
+}
+
+ourRandomRange(1, 9);
+
+// Only change code below this line.
+
+function randomRange(myMin, myMax) {
+
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+}
+
+// Change these values to test your function
+var myRandom = randomRange(5, 15);
+```
+
+## Sift through Text with Regular Expressions
+
+`Regular expressions` are used to find certain words or patterns inside of `strings`.
+
+For example, if we wanted to find the word `the` in the string `The dog chased the cat`, we could use the following `regular expression`: `/the/gi`
+
+Let's break this down a bit:
+
+`/` is the start of the regular expression.
+
+`the` is the pattern we want to match.
+
+`/` is the end of the regular expression.
+
+`g` means global, which causes the pattern to return all matches in the string, not just the first one.
+
+`i` means that we want to ignore the case (uppercase or lowercase) when searching for the pattern.
+> Practice
+```js
+// Setup
+var testString = "Ada Lovelace and Charles Babbage designed the first computer and the software that would have run on it.";
+
+// Example
+var expressionToGetSoftware = /software/gi;
+var softwareCount = testString.match(expressionToGetSoftware).length;
+  
+
+// Only change code below this line.
+
+var expression = /and/gi;  // Change this Line
+
+// Only change code above this line
+
+// This code counts the matches of expression in testString
+var andCount = testString.match(expression).length;
+// 2
+```
+
+## Find Numbers with Regular Expressions
+
+We can use special selectors in Regular Expressions to select a particular type of value.
+
+One such selector is the digit selector `\d` which is used to retrieve one digit (e.g. numbers 0 to 9) in a string.
+
+In JavaScript, it is used like this: `/\d/g`.
+
+Appending a plus sign (`+`) after the selector, e.g. `/\d+/g`, allows this regular expression to match one or more digits.
+
+The trailing g is short for 'global', which allows this regular expression to find all matches rather than stop at the first match.
+> Practice
+```js
+// Setup
+var testString = "There are 3 cats but 4 dogs.";
+
+// Only change code below this line.
+
+var expression = /\d+/g;  // Change this line
+
+// Only change code above this line
+
+// This code counts the matches of expression in testString
+var digitCount = testString.match(expression).length;
+// 2
+```
+
+## Find Whitespace with Regular Expressions
+
+We can also use regular expression selectors like `\s` to find whitespace in a string.
+
+The whitespace characters are `" "` (space), `\r` (the carriage return), `\n` (newline), `\t` (tab), and `\f` (the form feed).
+
+The whitespace regular expression looks like this:
+
+`/\s+/g`
+> Practice
+```js
+// Setup
+var testString = "How many spaces are there in this sentence?";
+
+// Only change code below this line.
+
+var expression = /\s+/g;  // Change this line
+
+// Only change code above this line
+
+// This code counts the matches of expression in testString
+var spaceCount = testString.match(expression).length;
+// 7
+```
+
+## Invert Regular Expression Matches with JavaScript
+
+You can invert any match by using the uppercase version of the regular expression selector.
+
+For example, `\s` will match any whitespace, and `\S` will match anything that isn't whitespace.
+> Practice
+```js
+// Setup
+var testString = "How many non-space characters are there in this sentence?";
+
+// Only change code below this line.
+
+var expression = /\S/g;  // Change this line
+
+// Only change code above this line
+
+// This code counts the matches of expression in testString
+var nonSpaceCount = testString.match(expression).length;
+// 49
+```
+
+-----
