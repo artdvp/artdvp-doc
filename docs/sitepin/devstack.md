@@ -6,112 +6,89 @@
 
 ## CSS Framework
 
-* [Bootstrap4](https://getbootstrap.com/)
+* [Bootstrap4](https://getbootstrap.com/) - Build responsive, mobile-first projects on the web
 * [mdBootstrap](https://mdbootstrap.com/)
 * [Bulma](https://bulma.io/)
-* [Tachyon](http://tachyons.io/)
+* [Tachyon](http://tachyons.io/) - Built for designing
 * [Tailwindcss](https://tailwindcss.com/)
+
+## UI Component
+
+* [Buefy](https://buefy.github.io/#/) - Lightweight UI components for Vue.js based on Bulma
 
 ## JS FrontEnd Framework
 
-* [Vue.js](https://vuejs.org/)
+* [Vue.js](https://vuejs.org/) - The Progressive JavaScript Framework
 * [React](https://reactjs.org/)
 * [jQuery](https://jquery.com/)
 
 ## JS FrontEnd Tools
 
-* Npm - Nodejs Package Manager
-  * [main](https://www.npmjs.com/)
-* Yarn
-  * [main](https://yarnpkg.com/en/)
-* Webpack
-  * [main](https://webpack.js.org/)
-* Lodash
-  * [main](https://lodash.com/)
-* Gulp.js
-  * [main](https://gulpjs.com/)
+* [Npm](https://www.npmjs.com/) - Nodejs Package Manager
+* [Yarn](https://yarnpkg.com/en/)
+* [Webpack](https://webpack.js.org/)
+* [Lodash](https://lodash.com/)
+* [Gulp.js](https://gulpjs.com/)
 
 ## JS BackEnd Framework
 
-* Node.js
-  * [main](https://nodejs.org/en/)
-* Express
-  * [main](https://expressjs.com/)
-* Koa
-* Hapi
-* Sails
-* Socket.io - RealTime Socket
-  * [main](https://socket.io/)
+* [Node.js](https://nodejs.org/en/) - JavaScript runtime
+* [Express](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js
+* [Koa.js](https://koajs.com/) - next generation web framework for Node.js
+* [Hapi](https://hapijs.com/) - A rich framework for building applications and services
+* [Sails.js](https://sailsjs.com/) - MVC framework for Node.js
+* [Socket.io](https://socket.io/) - RealTime Socket
+* [feathersjs](https://feathersjs.com/) - REST and realtime API
 
 ## Mobile
 
-* React Native
-  * [main](https://facebook.github.io/react-native/)
-* Ionic
-  * [main](https://ionicframework.com/)
+* [React Native](https://facebook.github.io/react-native/)
+* [Ionic](https://ionicframework.com/)
 
 ## JSON
 
 ## Database
 
-* Mongo
-  * [main](https://www.mongodb.com/)
+* [Mongo](https://www.mongodb.com/)
   * [github](https://github.com/mongodb/mongo)
-* PostgreSQL
-  * [main](https://www.postgresql.org/)
-* MySQL
-  * [main](https://www.mysql.com/)
-* Redis
-  * [main](https://redis.io/)
-* Memcache
-  * [main](https://memcached.org/)
-* MariaDB
-  * [main](https://mariadb.org/)
+* [PostgreSQL](https://www.postgresql.org/)
+* [MySQL](https://www.mysql.com/)
+* [Redis](https://redis.io/)
+* [Memcache](https://memcached.org/)
+* [MariaDB](https://mariadb.org/)
 
 ## Server
 
-* Nginx
-  * [main](https://www.nginx.com/)
+* [Nginx](https://www.nginx.com/)
 
 ## API
 
-* GraphQL
-  * [main](https://graphql.org/)
+* [GraphQL](https://graphql.org/)
 
 ## Serverless
 
-* Netlify
-  * [main](https://www.netlify.com/)
-* Heroku
-  * [main](https://www.heroku.com/)
-* Firebase
-  * [main](https://firebase.google.com/)
-* Now
-  * [main](https://zeit.co/now)
-* Surge
-  * [main](http://surge.sh/)
+* [Netlify](https://www.netlify.com/)
+* [Heroku](https://www.heroku.com/)
+* [Firebase](https://firebase.google.com/)
+* [zeit now](https://zeit.co/now)
+* [Surge](http://surge.sh/)
 
 ## Git
 
-* Github
-  * [main](https://github.com/)
-* Gitlab
-  * [main](https://about.gitlab.com/)
-* Bitbucket
-  * [main](https://bitbucket.org/)
+* [Github](https://github.com/)
+* [Gitlab](https://about.gitlab.com/)
+* [Bitbucket](https://bitbucket.org/)
 
 ## DevOps
 
-* Docker
-  * [main](https://www.docker.com/)
+* [Docker](https://www.docker.com/)
   * [hub](https://hub.docker.com/)
 
 ## Static Site Gen
 
-* [Nuxt.js](https://nuxtjs.org/)
+* [Nuxt.js](https://nuxtjs.org/) - Universal Vue.js Applications
 * [VuePress](https://vuepress.vuejs.org/) - Vue-powered Static Site Generator
-* Gastby
-  * [main]()
+* [Gastby](https://www.gatsbyjs.org/) - Blazing-fast static site generator for React
 
 ## Design Pattern
 
@@ -120,3 +97,7 @@
 ## Connecting Host
 
 * Filezilla
+
+## CMS Serverless
+
+* [Contentful](https://www.contentful.com/) - CMS content infrastructure
