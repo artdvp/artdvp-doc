@@ -4,9 +4,11 @@ sidebar: false
 
 # Learn Index
 
-## List for Learning
+> [Learning List collection by Artdvp](https://airtable.com/shrqhEwLasr49o1iF)
 
-* [Learning List collection by Artdvp](https://airtable.com/shrqhEwLasr49o1iF)
+## Now
+
+* [FreeCodeCamp](../freecodecamp/)
 
 ## Index Group
 
@@ -19,5 +21,5 @@ sidebar: false
 
 ## Collection
 
-* [Site Pin](../sitepin/)
-* [Gitmd](../gitmd/)
+* [Site Pin & Learn](../sitepin/)
+* [Git Markdown](../gitmd/)
