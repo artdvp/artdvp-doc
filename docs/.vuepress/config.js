@@ -26,7 +26,7 @@ module.exports = {
       '/sitepin/': [{
         title: "Site Pin",
         collapsable: false,
-        children: ["", "pin", "selflearn", "sitedev"]
+        children: ["", "pin", "selflearn","devstack", "sitedev"]
       }],
       '/javascript/': [{
         title: "JavaScript",

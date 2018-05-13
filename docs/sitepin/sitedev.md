@@ -18,6 +18,7 @@ Collection for Inspiration Site
 
 - [Airbnb](https://www.airbnb.com/) - [Stack Airbnb](https://stackshare.io/airbnb/airbnb)
 - [Netflix](http://www.netflix.com/) - [Stack Netflix](https://stackshare.io/netflix/netflix)
+- [simply](https://simply.co.za/) - React + Gatsby.js
 
 ## Dev Blog
 
@@ -29,6 +30,7 @@ Collection for Inspiration Site
 
 - [alispit](https://www.alispit.tel/#/)
 - [travisneilson](http://travisneilson.com/)
+- [atanas](https://atanas.info/)
 
 ## Github Dev
 
@@ -38,12 +40,14 @@ Collection for Inspiration Site
 
 ## Awesome Site
 
-- [https://matterport.com/](https://matterport.com/) - 3D Model for Buy Home 
+- [matterport](https://matterport.com/) - 3D Model for Buy Home 
 
 ## Inspiration for Work
 
-- [https://www.ddproperty.com/](https://www.ddproperty.com/) - Asset Property
+- [ddproperty](https://www.ddproperty.com/) - Asset Property
 
 ## Inspiration Beautiful
 
 - [getshifter.io](https://getshifter.io/)
+- [huemor](https://huemor.rocks/)
+- [bowenmedia](https://www.bowenmedia.com/)
