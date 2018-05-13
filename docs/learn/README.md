@@ -8,10 +8,6 @@ sidebar: false
 
 * [Learning List collection by Artdvp](https://airtable.com/shrqhEwLasr49o1iF)
 
-## Now Learning
-
-* [FreeCodeCamp](../freecodecamp/)
-
 ## Index Group
 
 * [Basic Foundation](../foundation/)
