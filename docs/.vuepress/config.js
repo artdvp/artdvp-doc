@@ -24,14 +24,14 @@ module.exports = {
         children: ["", "graphql_tut", "graphql_nodejs"]
       }],
       '/sitepin/': [{
-        title: "Site Pin",
+        title: "Site Pin & Learn",
         collapsable: false,
-        children: ["", "pin", "selflearn","devstack", "sitedev"]
+        children: ["", "pin", "selflearn","devstack", "sitedev","read-article"]
       }],
       '/javascript/': [{
         title: "JavaScript",
         collapsable: false,
-        children: ["", "javascript_pin", "modern-js-cheatsheet"]
+        children: ["", "javascript_pin", "modern-js-cheatsheet","js-learning"]
       }],
       '/git/': [{
         title: "Git",
@@ -41,7 +41,7 @@ module.exports = {
       '/freecodecamp/': [{
         title: "Free Code Camp",
         collapsable: false,
-        children: ["", "frontend-htmlcss", "frontend-responsive", "frontend-jquery", "basic-frontend-project", "frontend-javascript", "frontend-oop-functional-programming"]
+        children: ["", "frontend-htmlcss", "frontend-responsive", "frontend-jquery", "basic-frontend-project", "frontend-javascript", "frontend-oop-functional-programming","frontend-basic-algorithm"]
       }],
       '/ibuild/': [{
         title: "I Build",
@@ -71,7 +71,7 @@ module.exports = {
       '/gitmd/': [{
         title: "Git Markdown",
         collapsable: false,
-        children: ["", "awesome-vue"]
+        children: ["", "awesome-vue","awesome-nuxt","best-website-should-visit"]
       }]
     }
   },
