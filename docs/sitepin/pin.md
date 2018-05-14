@@ -4,41 +4,26 @@ Collection site for dev
 
 ## Resource Docs
 
-- [freeCodeCampGuide](https://guide.freecodecamp.org/)
+* [freeCodeCampGuide](https://guide.freecodecamp.org/) - All Document of programming
 
 ## Dev News
 
-- [Stackshare](https://stackshare.io/news)
+* [stackshare](https://stackshare.io/news) - Stack News
 
 ## Community Dev
 
-- [dev.to](https://dev.to/)
-- [stackoverflow](https://stackoverflow.com/)
+* [dev.to](https://dev.to/) - Developer Community
+* [stackoverflow](https://stackoverflow.com/) - Forum Developer
 
-## DevOps 
+## Coding Playground
 
-- [Docker](https://www.docker.com/)
-- [Docker Hub](https://hub.docker.com/)
+* [repl.it](https://repl.it/repls) - Coding Playground for learn code
 
-## Serverless
+## FrontEnd Collecting
 
-- [Heroku](https://www.heroku.com/) |  Deploy
-- [Firebase](https://firebase.google.com/)
-- [Netlify](https://www.netlify.com/)
-- [Now](https://zeit.co/now)
-- [Surge](http://surge.sh/)
+* [freefontend](http://freefrontend.com/)
 
-## Machine Learning
+## Tools for Developer
 
-- [Kaggle](https://www.kaggle.com/)
-
-## Vue Resource
-
-- [Vue.js](https://vuejs.org/) - The Progressive
-JavaScript Framework
-- [Nuxt.js](https://nuxtjs.org/) - Universal Vue.js Applications
-- [Vuepress](https://vuepress.vuejs.org/) - Vue-powered Static Site Generator
-
-## CMS Serverless
-
-- [Contentful](https://www.contentful.com/) - Contentful provides content infrastructure that enables teams to power content in any digital product.
+* [canva](https://www.canva.com/) - Design Logo, Photo, Poster and more
+* [imgbb](https://imgbb.com/) - upload and share image with direct link
