@@ -36,12 +36,14 @@ Collection for Inspiration Site
 - [alispit](https://www.alispit.tel/#/)
 - [travisneilson](http://travisneilson.com/)
 - [atanas](https://atanas.info/)
+- [vickylai](https://vickylai.com/index.html) - dev girl nomad fullstack
 
 ## Github Dev
 
 - [Evan You](https://github.com/yyx990803) - Creator Vue.js
 - [Alexandre Chopin](https://github.com/alexchopin) - Creator Nuxt.js
 - [Sarah Drasner](https://github.com/sdras) - Vue.js Developer
+- [Vicky Lai](https://github.com/hivickylai) - Nomadic Fullstack
 
 ## Awesome Site
 

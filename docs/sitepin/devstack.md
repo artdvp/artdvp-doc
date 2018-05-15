@@ -19,8 +19,8 @@
 ## JS FrontEnd Framework
 
 * [Vue.js](https://vuejs.org/) - The Progressive JavaScript Framework
-* [React](https://reactjs.org/)
-* [jQuery](https://jquery.com/)
+* [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+* [jQuery](https://jquery.com/) - a fast, small, and feature-rich JavaScript library
 
 ## JS FrontEnd Tools
 
