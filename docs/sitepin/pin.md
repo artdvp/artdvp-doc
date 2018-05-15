@@ -15,6 +15,10 @@ Collection site for dev
 * [dev.to](https://dev.to/) - Developer Community
 * [stackoverflow](https://stackoverflow.com/) - Forum Developer
 
+## Dev Chat
+
+- [gitter](https://gitter.im/) 
+
 ## Coding Playground
 
 * [repl.it](https://repl.it/repls) - Coding Playground for learn code
