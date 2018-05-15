@@ -7,10 +7,10 @@
 ## CSS Framework
 
 * [Bootstrap4](https://getbootstrap.com/) - Build responsive, mobile-first projects on the web
-* [mdBootstrap](https://mdbootstrap.com/)
-* [Bulma](https://bulma.io/)
+* [mdBootstrap](https://mdbootstrap.com/) - Material Design for Bootstrap 4
+* [Bulma](https://bulma.io/) - open source CSS framework based on Flexbox
 * [Tachyon](http://tachyons.io/) - Built for designing
-* [Tailwindcss](https://tailwindcss.com/)
+* [Tailwindcss](https://tailwindcss.com/) - A Utility-First CSS Framework for Rapid UI Development
 
 ## UI Component
 
@@ -25,10 +25,11 @@
 ## JS FrontEnd Tools
 
 * [Npm](https://www.npmjs.com/) - Nodejs Package Manager
-* [Yarn](https://yarnpkg.com/en/)
-* [Webpack](https://webpack.js.org/)
-* [Lodash](https://lodash.com/)
-* [Gulp.js](https://gulpjs.com/)
+* [Yarn](https://yarnpkg.com/en/) - Fast, Reliable, And Secure Dependency Management
+* [Webpack](https://webpack.js.org/) - bundle your assets, script, images, styles
+* [parcel](https://parceljs.org/) - Blazing fast, zero configuration web application bundler
+* [Lodash](https://lodash.com/) - A modern JavaScript utility library delivering modularity, performance & extras.
+* [Gulp.js](https://gulpjs.com/) - Automate and enhance your workflow
 
 ## JS BackEnd Framework
 
@@ -42,17 +43,17 @@
 
 ## Mobile
 
-* [React Native](https://facebook.github.io/react-native/)
-* [Ionic](https://ionicframework.com/)
+* [React Native](https://facebook.github.io/react-native/) - Build native mobile apps using JavaScript and React
+* [Ionic](https://ionicframework.com/) - Build amazing apps in one codebase, for any platform, with the web.
 
 ## JSON
 
 ## Database
 
-* [Mongo](https://www.mongodb.com/)
+* [Mongo](https://www.mongodb.com/) - Building on the Best of Relational with the Innovations of NoSQL
   * [github](https://github.com/mongodb/mongo)
-* [PostgreSQL](https://www.postgresql.org/)
-* [MySQL](https://www.mysql.com/)
+* [PostgreSQL](https://www.postgresql.org/) - Postgresql: The World's Most Advanced Open Source Relational Database
+* [MySQL](https://www.mysql.com/) - The world's most popular open source database
 * [Redis](https://redis.io/)
 * [Memcache](https://memcached.org/)
 * [MariaDB](https://mariadb.org/)

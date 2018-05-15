@@ -24,4 +24,8 @@ other
 
 > Incomplete
 
+- [tab tracker](https://github.com/artdvp/tab-tracker) - vue project
+- [vue-complete-guide](https://github.com/artdvp/vue-complete-guide) - learn vue course
+- [nuxt-hacker-news](https://github.com/artdvp/nuxt-hacker-news) - `design not ok` - nuxt.js
+- [express mongo](https://github.com/artdvp/express-mongo)
 - [GolangBegin](https://github.com/artdvp/GolangBegin) - Golang
