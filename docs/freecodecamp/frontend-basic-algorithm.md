@@ -296,7 +296,7 @@ console.log(repeatStringNumTimes("abc", -2))
 // ""
 ```
 
-## Truncate a string Incomplete   *
+## Truncate a string
 
 Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a `...` ending.
 
@@ -312,14 +312,45 @@ Here are some helpful links:
 
 
 ```js
-// thinking...?
+function truncateString(str, num) {
+    // Clear out that junk in your trunk
+    var newStr = "";
+    if (num <= 3) {
+        newStr = str.slice(0, num) + "...";
+    } else if (num >= str.length) {
+        newStr = str;
+    } else {
+        newStr = str.slice(0, num - 3) + "...";
+    }
+    return newStr;
+}
+
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 11))
+// A-tisket...
+console.log(truncateString("Peter Piper picked a peck of pickled peppers", 14))
+// Peter Piper...
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length))
+// A-tisket a-tasket A green and yellow basket
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length + 2))
+// A-tisket a-tasket A green and yellow basket
+console.log(truncateString("A-", 1))
+// A...
+console.log(truncateString("Absolutely Longer", 2))
+// Ab...
 ```
 
-<!--
-
-
-
 ### Chunky Monkey Incomplete   *
+
+Write a function that splits an array (first argument) into groups the length of `size` (second argument) and returns them as a two-dimensional array.
+
+Remember to use Read-Search-Ask if you get stuck. Write your own code.
+
+Here are some helpful links:
+
+[Array.prototype.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+[Array.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+
+<!--
 
 ## Slasher Flick Incomplete   *
 
