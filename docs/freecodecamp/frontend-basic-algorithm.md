@@ -22,10 +22,7 @@ Here are some helpful links:
 ```js
 function reverseString(str) {
   var newStr = "";
-  return (newStr = str
-    .split("")
-    .reverse()
-    .join(""));
+  return newStr = str.split("").reverse().join("");
 }
 
 reverseString("hello");
@@ -82,10 +79,7 @@ Here are some helpful links:
 function palindrome(str) {
   // Good luck!
   var newStr = str.replace(/\W|_/g, "").toLowerCase();
-  var reverseStr = newStr
-    .split("")
-    .reverse()
-    .join("");
+  var reverseStr = newStr.split("").reverse().join("");
   return newStr === reverseStr ? true : false;
 }
 
@@ -131,12 +125,9 @@ Here are some helpful links:
 ```js
 function findLongestWord(str) {
   var newArr = [];
-  newArr = str
-    .split(" ")
-    .map(function(val) {
-      return val.length;
-    })
-    .sort(function(a, b) {
+  newArr = str.split(" ").map(function(val) { 
+      return val.length; 
+    }).sort(function(a, b) { 
       return b - a;
     });
   return newArr.length > 1 ? newArr[0] : 0;
@@ -148,15 +139,9 @@ console.log(findLongestWord("May the force be with you"));
 // 5
 console.log(findLongestWord("Google do a barrel roll"));
 // 6
-console.log(
-  findLongestWord("What is the average airspeed velocity of an unladen swallow")
-);
+console.log(findLongestWord("What is the average airspeed velocity of an unladen swallow"));
 // 8
-console.log(
-  findLongestWord(
-    "What if we try a super-long word such as otorhinolaryngology"
-  )
-);
+console.log(findLongestWord("What if we try a super-long word such as otorhinolaryngology"));
 // 19
 ```
 
@@ -175,13 +160,9 @@ Here are some helpful links:
 ```js
 function titleCase(str) {
   var newStr = "";
-  newStr = str
-    .toLowerCase()
-    .split(" ")
-    .map(function(val) {
+  newStr = str.toLowerCase().split(" ").map(function(val) {
       return val.charAt(0).toUpperCase() + val.substr(1);
-    })
-    .join(" ");
+    }).join(" ");
   return newStr;
 }
 
@@ -288,27 +269,55 @@ Here are some helpful links:
 [Global String Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ```js
-// thinking....?
-```
-
-<!--
-```js
 function repeatStringNumTimes(str, num) {
-    // repeat after me
-    var newStr = "";
-    if (num < 0) {
-        return "";
-    } else {
-        for (let i = 0; i < num; i++) {
-            newStr += str;
-        }
-        return newStr;
+  // repeat after me
+  var newStr = "";
+  if (num < 0) {
+    return "";
+  } else {
+    for (var i = 0; i < num; i++) {
+      newStr += str;
     }
+    return newStr;
+  }
 }
 
+console.log(repeatStringNumTimes("abc", 3))
+// abcabcabc
+console.log(repeatStringNumTimes("*", 3))
+// ***
+console.log(repeatStringNumTimes("abc", 4))
+// abcabcabcabc
+console.log(repeatStringNumTimes("abc", 1))
+// abc
+console.log(repeatStringNumTimes("*", 8))
+// ********
+console.log(repeatStringNumTimes("abc", -2))
+// ""
 ```
 
 ## Truncate a string Incomplete   *
+
+Truncate a string (first argument) if it is longer than the given maximum string length (second argument). Return the truncated string with a `...` ending.
+
+Note that inserting the three dots to the end will add to the string length.
+
+However, if the given maximum string length `num` is less than or equal to 3, then the addition of the three dots does not add to the string length in determining the truncated string.
+
+Remember to use Read-Search-Ask if you get stuck. Write your own code.
+
+Here are some helpful links:
+
+[String.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
+
+
+```js
+// thinking...?
+```
+
+<!--
+
+
 
 ### Chunky Monkey Incomplete   *
 
