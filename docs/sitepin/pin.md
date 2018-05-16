@@ -5,10 +5,15 @@ Collection site for dev
 ## Resource Docs
 
 * [freeCodeCampGuide](https://guide.freecodecamp.org/) - All Document of programming
+* [Web Development Mindmap](https://coggle.it/diagram/Vz9LvW8byvN0I38x/t/web-development)
 
 ## Dev News
 
 * [stackshare](https://stackshare.io/news) - Stack News
+
+### Vue 
+
+* [vuejsfeed](https://vuejsfeed.com/) - The latest Vue.js news, tutorials, plugins, and more
 
 ## Community Dev
 

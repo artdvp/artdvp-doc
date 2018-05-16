@@ -26,6 +26,7 @@
 
 ### Vue.js
 
+* [สร้าง Single Page Application ด้วย Vue.js และ Firebase authentication] - `Book date : 2018-05-16`(https://medium.com/@Big.Wattanachai/สร้าง-single-page-application-ด้วย-vue-js-และ-firebase-authentication-1c8219aa77bd)
 * [Vue.js Application Tutorial - Creating a Simple Budgeting App with Vue](https://matthiashager.com/complete-vuejs-application-tutorial/planning-application) - `Book date : 2018-05-13`
 * [Building Real Time Single Page Web Applications With Vue.js 2 and Firebase](https://codingthesmartway.com/vue-js-2-and-firebase/) - `Book date : 2018-05-15`
 
