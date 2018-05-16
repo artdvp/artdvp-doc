@@ -8,4 +8,4 @@
 
 ### Nuxt.js
 
-* [What Nuxt.js Is All About](https://academind.com/learn/vue-js/nuxt-js-tutorial-introduction/) - `Read`
+* `Read` - [What Nuxt.js Is All About](https://academind.com/learn/vue-js/nuxt-js-tutorial-introduction/)
