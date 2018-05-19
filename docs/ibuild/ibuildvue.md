@@ -2,6 +2,20 @@
 
 I learn and build with Vue
 
+## Todo List with Vue.js + Vuex
+
+::: tip Completed
+Demo : [I Build This](https://artdvp.github.io/vue-learning/vue-basic-vuex-todo/)
+<br>
+Github : [vue todo list](https://github.com/artdvp/vue-learning/tree/master/docs/vue-basic-vuex-todo)
+:::
+
+**Source I learned**
+
+- [Getting Started with Vuex: Managing State in Vue.js](https://sabe.io/tutorials/getting-started-with-vuex)
+
+---
+
 ## Vue.js Contributors - Nuxt.js 
 
 ![Imgur](https://i.imgur.com/LUZhLtt.png)
