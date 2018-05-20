@@ -26,12 +26,12 @@ module.exports = {
       '/sitepin/': [{
         title: "Site Pin & Learn",
         collapsable: false,
-        children: ["", "pin","todo","selflearn","devstack", "sitedev","read-article","aspnet"]
+        children: ["", "pin", "todo", "selflearn", "devstack", "sitedev", "read-article", "aspnet"]
       }],
       '/javascript/': [{
         title: "JavaScript",
         collapsable: false,
-        children: ["", "javascript_pin", "modern-js-cheatsheet","js-learning"]
+        children: ["", "javascript_pin", "modern-js-cheatsheet", "js-learning"]
       }],
       '/git/': [{
         title: "Git",
@@ -41,7 +41,7 @@ module.exports = {
       '/freecodecamp/': [{
         title: "Free Code Camp",
         collapsable: false,
-        children: ["", "frontend-htmlcss", "frontend-responsive", "frontend-jquery", "basic-frontend-project", "frontend-javascript", "frontend-oop-functional-programming","frontend-basic-algorithm"]
+        children: ["", "frontend-htmlcss", "frontend-responsive", "frontend-jquery", "basic-frontend-project", "frontend-javascript", "frontend-oop-functional-programming", "frontend-basic-algorithm"]
       }],
       '/ibuild/': [{
         title: "I Build",
@@ -68,10 +68,15 @@ module.exports = {
         collapsable: false,
         children: ["", "commandline-with-codecademy"]
       }],
+      '/blog': [{
+        title: "Blog",
+        collapsable: false,
+        children: ["", "20180518-1"]
+      }],
       '/gitmd/': [{
         title: "Git Markdown",
         collapsable: false,
-        children: ["", "awesome-vue","awesome-nuxt","best-website-should-visit"]
+        children: ["", "awesome-vue", "awesome-nuxt", "best-website-should-visit"]
       }]
     }
   },
