@@ -45,6 +45,8 @@ Here are some helpful links:
 
 - [Arithmetic Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
 
+> Solve
+
 ```js
 function factorialize(num) {
   return num < 1 ? 1 : num * factorialize(num - 1);
@@ -74,6 +76,8 @@ Here are some helpful links:
 
 - [String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 - [String.prototype.toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
+
+> Solve
 
 ```js
 function palindrome(str) {
@@ -122,6 +126,8 @@ Here are some helpful links:
 - [String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 - [String.length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
 
+> Solve
+
 ```js
 function findLongestWord(str) {
   var newArr = [];
@@ -157,6 +163,8 @@ Here are some helpful links:
 
 - [String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
+> Solve
+
 ```js
 function titleCase(str) {
   var newStr = "";
@@ -187,6 +195,8 @@ Remember to use Read-Search-Ask if you get stuck. Write your own code.
 Here are some helpful links:
 
 - [Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
+
+> Solve
 
 ```js
 function largestOfFour(arr) {
@@ -236,6 +246,8 @@ Here are some helpful links:
 - [String.prototype.substr()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr)
 - [String.prototype.substring()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring)
 
+> Solve
+
 ```js
 function confirmEnding(str, target) {
   // "Never give up and good luck will find you."
@@ -267,6 +279,8 @@ Remember to use Read-Search-Ask if you get stuck. Write your own code.
 Here are some helpful links:
 
 - [Global String Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+> Solve
 
 ```js
 function repeatStringNumTimes(str, num) {
@@ -310,6 +324,7 @@ Here are some helpful links:
 
 - [String.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
 
+> Solve
 
 ```js
 function truncateString(str, num) {
@@ -350,6 +365,8 @@ Here are some helpful links:
 - [Array.prototype.push()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 - [Array.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 
+> Solve
+
 ```js
 function chunkArrayInGroups(arr, size) {
   // Break it up.
@@ -389,6 +406,8 @@ Here are some helpful links:
 - [Array.prototype.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 - [Array.prototype.splice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
+> Solve
+
 ```js
 function slasher(arr, howMany) {
     // it doesn't always pay to be first
@@ -425,6 +444,8 @@ Remember to use Read-Search-Ask if you get stuck. Write your own code.
 Here are some helpful links:
 
 - [String.prototype.indexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
+
+> Solve
 
 ```js
 function mutation(arr) {
@@ -468,6 +489,8 @@ Here are some helpful links:
 - [Boolean Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 - [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
+> Solve
+
 ```js
 function bouncer(arr) {
     // Don't show a false ID to this bouncer.
@@ -497,6 +520,8 @@ Here are some helpful links:
 
 - [Arguments object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
 - [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+> Solve
 
 ```js
 function destroyer(arr) {
@@ -536,6 +561,7 @@ Here are some helpful links:
 
 - [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
+> Solve
 
 ```js
 function getIndexToIns(arr, num) {
@@ -580,6 +606,8 @@ Here are some helpful links:
 
 - [String.prototype.charCodeAt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)
 - [String.fromCharCode()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
+
+> Solve
 
 ```js
 function rot13(str) { // LBH QVQ VG!
