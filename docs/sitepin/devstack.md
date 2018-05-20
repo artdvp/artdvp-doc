@@ -54,17 +54,17 @@
   * [github](https://github.com/mongodb/mongo)
 * [PostgreSQL](https://www.postgresql.org/) - Postgresql: The World's Most Advanced Open Source Relational Database
 * [MySQL](https://www.mysql.com/) - The world's most popular open source database
-* [Redis](https://redis.io/)
-* [Memcache](https://memcached.org/)
-* [MariaDB](https://mariadb.org/)
+* [Redis](https://redis.io/) - In-memory data structure store, used as a database
+* [Memcache](https://memcached.org/) - Distributed memory object caching system
+* [MariaDB](https://mariadb.org/) - Supporting continuity and open collaboration in the MariaDB ecosystem
 
 ## Server
 
-* [Nginx](https://www.nginx.com/)
+* [Nginx](https://www.nginx.com/) - Improve the performance, reliability, and security of your applications
 
 ## API
 
-* [GraphQL](https://graphql.org/)
+* [GraphQL](https://graphql.org/) - A query language for your API
 
 ## Serverless
 
