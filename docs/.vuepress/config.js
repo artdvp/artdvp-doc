@@ -41,7 +41,7 @@ module.exports = {
       '/freecodecamp/': [{
         title: "Free Code Camp",
         collapsable: false,
-        children: ["", "frontend-htmlcss", "frontend-responsive", "frontend-jquery", "basic-frontend-project", "frontend-javascript", "frontend-oop-functional-programming", "frontend-basic-algorithm","frontend-json-apis-and-ajax"]
+        children: ["", "frontend-htmlcss", "frontend-responsive", "frontend-jquery", "basic-frontend-project", "frontend-javascript", "frontend-oop-functional-programming", "frontend-basic-algorithm","frontend-json-apis-and-ajax","intermediate-frontend-project"]
       }],
       '/ibuild/': [{
         title: "I Build",

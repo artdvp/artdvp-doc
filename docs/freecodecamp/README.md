@@ -17,8 +17,8 @@ At [FreeCodeCamp](https://www.freecodecamp.org/)
 - `Complete` - Basic Javascript
 - `Complete` - Object Oriented and Functional Programming
 - `Complete` - Basic Algorithm Scripting
-- `Now` - JSON APIs and AJAX
-- Intermediate Front End Development Project
+- `Complete` - JSON APIs and AJAX
+- `Now` - Intermediate Front End Development Project
 - Intermediate Algorithm Scripting
 - Advanced Algorithm Scripting
 - Advanced Front End Development Project
