@@ -45,6 +45,7 @@ Collection for Inspiration Site
 - [Alexandre Chopin](https://github.com/alexchopin) - Creator Nuxt.js
 - [Sarah Drasner](https://github.com/sdras) - Vue.js Developer
 - [Vicky Lai](https://github.com/hivickylai) - Nomadic Fullstack
+- [Neo Ighodaro](https://github.com/neoighodaro) - Fullstack - use vue
 
 ## Awesome Site
 
