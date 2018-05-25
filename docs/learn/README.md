@@ -18,6 +18,7 @@ sidebar: false
 * [Git](../git/)
 * [GraphQL](../graphql/)
 * [JavaScript](../javascript/)
+* [Vue.js](../vue/)
 
 ## Collection
 
