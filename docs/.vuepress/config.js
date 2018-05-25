@@ -77,7 +77,12 @@ module.exports = {
         title: "Git Markdown",
         collapsable: false,
         children: ["", "awesome-vue", "awesome-nuxt", "best-website-should-visit"]
-      }]
+      }],
+      '/vue/': [{
+        title: "Vue.js",
+        collapsable: false,
+        children: ["", "vue-lynda"]
+      }],
     }
   },
   serviceWorker: false
