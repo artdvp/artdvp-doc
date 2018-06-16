@@ -17,6 +17,7 @@ Collection site for dev
 ### Vue
 
 * [vuejsfeed](https://vuejsfeed.com/) - The latest Vue.js news, tutorials, plugins, and more
+* [madewithvue](https://madewithvuejs.com/)
 
 ## Community Dev
 

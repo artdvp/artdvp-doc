@@ -38,6 +38,7 @@ Collection for Inspiration Site
 - [travisneilson](http://travisneilson.com/)
 - [atanas](https://atanas.info/)
 - [vickylai](https://vickylai.com/index.html) - dev girl nomad fullstack
+- [silvestarbistrovic](https://www.silvestarbistrovic.from.hr/) - freelancer WordPress
 
 ## Github Dev
 

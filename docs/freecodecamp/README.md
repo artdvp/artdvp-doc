@@ -1,14 +1,22 @@
 # About FreeCodeCamp
 
-Restart FreeCodeCamp 
+Restart FreeCodeCamp
 
 `Learning` Target to **Fullstack Developer**
 
 At [FreeCodeCamp](https://www.freecodecamp.org/)
 
-## Topics
+FreeCodeCamp Update Challenge
 
-**Front End Development Certification**
+## New Topics Version Update
+
+**Responsive Web Design Certification**
+
+- Basic HTML and HTML5
+
+## Old Section
+
+`Front End Development Certification`
 
 - `Complete` - HTML5 and CSS3
 - `Complete` - Responsive Design with Bootstrap
@@ -22,4 +30,4 @@ At [FreeCodeCamp](https://www.freecodecamp.org/)
 - Intermediate Algorithm Scripting
 - Advanced Algorithm Scripting
 - Advanced Front End Development Project
-- `Goal` - Claim Your Front End Development Certificate
+- Claim Your Front End Development Certificate
