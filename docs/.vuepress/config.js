@@ -26,12 +26,12 @@ module.exports = {
       '/sitepin/': [{
         title: "Site Pin & Learn",
         collapsable: false,
-        children: ["", "pin", "todo", "selflearn", "devstack", "sitedev", "read-article","project-interest", "aspnet"]
+        children: ["", "pin", "todo", "selflearn", "devstack", "sitedev", "read-article", "project-interest", "aspnet"]
       }],
       '/javascript/': [{
         title: "JavaScript",
         collapsable: false,
-        children: ["", "javascript_pin", "modern-js-cheatsheet", "js-learning"]
+        children: ["", "javascript_pin", "modern-js-cheatsheet", "js-learning", "you-dont-know-js"]
       }],
       '/git/': [{
         title: "Git",
@@ -41,7 +41,7 @@ module.exports = {
       '/freecodecamp/': [{
         title: "Free Code Camp",
         collapsable: false,
-        children: ["", "frontend-htmlcss", "frontend-responsive", "frontend-jquery", "basic-frontend-project", "frontend-javascript", "frontend-oop-functional-programming", "frontend-basic-algorithm","frontend-json-apis-and-ajax","intermediate-frontend-project"]
+        children: ["", "frontend-htmlcss", "frontend-responsive", "frontend-jquery", "basic-frontend-project", "frontend-javascript", "frontend-oop-functional-programming", "frontend-basic-algorithm", "frontend-json-apis-and-ajax", "intermediate-frontend-project"]
       }],
       '/ibuild/': [{
         title: "I Build",
@@ -82,6 +82,11 @@ module.exports = {
         title: "Vue.js",
         collapsable: false,
         children: ["", "vue-lynda"]
+      }],
+      '/note/': [{
+        title: "Note",
+        collapsable: false,
+        children: ["", "workshop-node-vue"]
       }],
     }
   },
